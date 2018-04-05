@@ -1,0 +1,352 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="animate.css" />
+
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            color:#111;
+            background:#fefefe;
+            text-rendering: optimizeLegibility;
+            font-smooth: always;
+            font-smoothing: antialiased;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding:0;
+            margin:0;
+            /*font-size: calc(8px + 8 * ((100vw - 320px) / (1366-320) ));*/
+        }
+        .fp-tooltip {
+            color:#111 !important;
+        }
+
+        .content {
+            padding:6rem 12rem 6rem 6rem;
+            overflow: auto;
+            box-sizing: border-box;
+            text-align: left;
+            /*max-width:1366px;*/
+            width:100%;
+        }
+        .image {
+            width:32%;
+            height:100%;
+            float:left;
+            display:block;
+        }
+        .image ~ .text {
+            margin-left:8%;
+        }
+        .text ~ .image {
+            margin-left:8%;
+        }
+
+        .text {
+            width:60%;
+            float:left;
+            display:block;
+            height:100%;
+        }
+
+        h1 {
+            font-size:3.5em;
+            padding:0;
+            margin:0;
+        }
+        h2 {
+            font-size:1.75em;
+            font-weight: 400;
+        }
+        p, h2 {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        p {
+            font-size:1em;
+        }
+
+        [data-animation] {
+            visibility: hidden;
+        }
+        [data-animation].animated {
+            visibility: visible;
+        }
+        header {
+            /*
+            background:#fefefe;
+            background: linear-gradient( rgba(254,254,254,1), rgba(254,254,254,0) );
+            */
+            z-index:99999;
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            text-align: left;
+            padding:1rem;
+            font-family: 'Playfair Display', serif;
+            padding:1.5rem 6rem 2rem 6rem;
+        }
+
+        header h1 {
+            font-size:1.5em;
+            font-weight:700;
+            padding:0;
+            margin:0;
+            color:#111;
+            float:left;
+        }
+        header h2 {
+            font-size:1em;
+            font-weight:400;
+            padding:0;
+            margin:0;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin:0.25rem 0;
+            float:right;
+            color:#aaa;
+        }
+
+        footer {
+            /*
+            background:#fefefe;
+            background: linear-gradient( rgba(254,254,254,0), rgba(254,254,254,1) );
+            */
+            position: fixed;
+            bottom:0;
+            left:0;
+            right:0;
+            text-align: right;
+            font-family: 'Source Sans Pro', sans-serif;
+            padding:2rem 6rem 1rem 6rem;
+           color:#aaa;
+            z-index:99999;
+            font-size:0.9em;
+        }
+
+        .fp-viewing-0 header h2, .fp-viewing-0 footer, .fp-viewing-0 footer a, .fp-viewing-0 footer a:hover {
+             color:inherit;
+        }
+
+        header h2, footer, footer a {
+             color:inherit;
+        }
+
+        footer small {
+            display:block;
+            margin:0.5rem 0;
+        }
+        footer a, footer a:link, footer a:active {
+            color:#111;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            text-decoration: none;
+            color:inherit;
+        }
+        button {
+            border:1px solid #111;
+            padding:1.25em 1.5em;
+            background:transparent;
+            border-radius:2em;
+            font-size:1rem;
+            font-weight: 400;
+            color:#111;
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 0;
+            transition:background,0.2s ease;
+            float:right;
+        }
+        button:hover {
+            cursor:pointer;
+            background:#111;
+            color:#fefefe;
+        }
+
+        .content {
+            /*margin: 0 auto 0 auto;*/
+        }
+
+  
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ImmersiveTeaching.org</h1>
+        <!--
+            <h2>Evaluating the effective use of 360°, Augmented and Virtual Reality Technologies for Outstanding Teaching, Learning &amp; Assessment</h2>
+        -->
+    </header>
+
+
+    <div id="fullpage">
+        <div class="section" data-navigation="home|Home">
+            
+
+            <div class="content">
+                 
+                    <img class="image" src="vr.svg"/>
+
+                 <div class="text">
+                    <h1>Virtual Reality in the Classroom</h1>
+                    <h2>In 2018, as part of the Education &amp; Training Foundations' Outstanding Teaching Learning &amp; Assessment grant programme, a partnership of Sussex further education providers explored the effective use of 360°, augmented and virtual reality technologies within the classroom.</h2>
+
+                    <h2>This website is an interactive guide for educators to learn</h2>
+
+                </div>
+                
+
+    
+                <button style="clear:both" class="button-next">Let's get started!</button>
+    
+            </div>
+       
+        </div>
+        <div class="section">
+                <div class="content">
+                <h1>Project Partners</h1>
+                    
+                    <h2 data-animation="fadeInUp">The project would not have succeeded without the hard work of the students and staff at the partner colleges:</h2>
+                    
+                    <h2 data-animation="fadeInUp">Thank you also to the funders, mentor organisations and broadcast partners for supporting the project:</h2>
+                    
+                    </div>
+        </div>
+        <div class="section">
+            <div class="content">
+               <h1>Why Virtual Reality? Why now?</h1>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+           </div>
+        </div>
+        <div class="section">
+                <div class="content">
+                   <h1>Types of Immersive Technologies</h1>
+                        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+               </div>
+            </div>
+
+            <div class="section">
+                    <div class="content">
+                       <h1>Types of Learning Activities</h1>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+                   </div>
+                </div>
+
+                <div class="section">
+                        <div class="content">
+                           <h1>Explore the Case Studies</h1>
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+                       </div>
+                    </div>
+
+                    <div class="section">
+                            <div class="content">
+                               <h1>Student Evaluations</h1>
+                                    
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+                           </div>
+                        </div>
+
+                        <div class="section">
+                                <div class="content">
+                                   <h1>Teacher Evaluations</h1>
+                                        
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+                               </div>
+                            </div>
+
+                        <div class="section">
+                                <div class="content">
+                                   <h1>Project Conclusion</h1>
+                                        
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+                               </div>
+                            </div>
+    
+
+    </div>
+    <footer>
+    <small id="reference">Maltby, J. M. 2018. <em>Practical Immersive Learning.</em> [ONLINE] Available at: https://practicalimmersivelearning.com.</small>
+
+    <small>
+            Support by the <a href='https://www.et-foundation.co.uk'>Education &amp; Training Foundation</a> &middot; Project lead by <a href='https://www.plumpton.ac.uk'>Plumpton College</a> &middot; <a href='https://creativecommons.org/licenses/by/4.0/legalcode'>Creative Commons Attribution License</a> &middot; <a href='https://twitter.com/@jmichaelmaltby'>Contact the Author</a></small>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="fullpage/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+    // two variables to store anchors and tooltips
+        var anchors = [],
+            tooltips = [];
+        $('.section').each(function() {
+            // retrieve the attribute
+            var navigation = $(this).data('navigation');
+            if (!navigation)
+                return;
+
+            // the attribute data-navigation is built like : anchor|tooltip
+            var parts = navigation.split('|');
+
+            anchors.push(parts[0]);
+            tooltips.push(parts[1]);
+        });
+
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                navigation: true,
+                parallax: true,
+        		navigationPosition: 'right',
+                navigationTooltips: tooltips,
+                showActiveTooltip:true,
+               /* anchors: anchors,*/
+                 // sectionsColor: ['#eceff1','#fefefe'],
+                afterLoad: function(anchorLink, index){
+                    console.log(index);
+                    $('[data-animation]').removeClass();
+                    var loadedSection = $(this);
+                    var index=0;
+                    loadedSection.find('[data-animation]').each(function() {
+                        $(this).addClass('animated');
+                        $(this).addClass( $(this).data('animation') );
+                        $(this).css('animation-delay', (index++ * 250)+'ms' );
+                    });
+                },
+                onLeave: function(anchorLink, index){
+                
+                }
+            });
+
+            $('.button-previous').click(function(){
+                $.fn.fullpage.moveSectionUp();
+            });
+            $('.button-next').click(function(){
+                $.fn.fullpage.moveSectionDown();
+            });
+
+            function formatDate(date) {
+                var monthNames = [
+                    "January", "February", "March",
+                    "April", "May", "June", "July",
+                    "August", "September", "October",
+                    "November", "December"
+                ];
+                var day = date.getDate();
+                var monthIndex = date.getMonth();
+                var year = date.getFullYear();
+                return day + ' ' + monthNames[monthIndex] + ' ' + year;
+            }
+            var now = new Date();
+            var date = formatDate(now);
+            $('#reference').append(' [Accessed ' + date + '].');
+        });
+    </script>
+</body>
+</html>
