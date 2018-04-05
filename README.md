@@ -1,2 +1,2 @@
-# VirtualClassroom
-Open access e-learning website for the Virtual Reality in the Classroom project. Supported by the Education &amp; Training Foundation.
+# Teaching with Virtual Reality
+Open access e-learning website for the 2018 Teaching with Virtual Reality research project. Supported by the Education &amp; Training Foundation.
