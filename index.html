@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="/fullpage/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="/animate.css" />
+    <link rel="stylesheet" type="text/css" href="fullpage/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="animate.css" />
 
     <style>
         body {
@@ -30,7 +30,6 @@
             overflow: auto;
             box-sizing: border-box;
             text-align: left;
-            /*max-width:1366px;*/
             width:100%;
         }
         .image {
@@ -76,10 +75,10 @@
             visibility: visible;
         }
         header {
-            /*
+            
             background:#fefefe;
             background: linear-gradient( rgba(254,254,254,1), rgba(254,254,254,0) );
-            */
+            
             z-index:99999;
             position: fixed;
             top:0;
@@ -111,28 +110,20 @@
         }
 
         footer {
-            /*
+            
             background:#fefefe;
             background: linear-gradient( rgba(254,254,254,0), rgba(254,254,254,1) );
-            */
+            
             position: fixed;
             bottom:0;
             left:0;
             right:0;
             text-align: right;
             font-family: 'Source Sans Pro', sans-serif;
-            padding:2rem 6rem 1rem 6rem;
-           color:#aaa;
+            padding:2rem 2rem 1rem 2rem;
+           color:#999;
             z-index:99999;
             font-size:0.9em;
-        }
-
-        .fp-viewing-0 header h2, .fp-viewing-0 footer, .fp-viewing-0 footer a, .fp-viewing-0 footer a:hover {
-             color:inherit;
-        }
-
-        header h2, footer, footer a {
-             color:inherit;
         }
 
         footer small {
@@ -140,7 +131,7 @@
             margin:0.5rem 0;
         }
         footer a, footer a:link, footer a:active {
-            color:#111;
+            color:#999;
             text-decoration: underline;
         }
         footer a:hover {
@@ -167,7 +158,8 @@
         }
 
         .content {
-            /*margin: 0 auto 0 auto;*/
+            margin: 0 auto 0 auto;
+            max-width:1366px;
         }
 
   
@@ -175,8 +167,10 @@
 </head>
 <body>
     <header>
-        <h1>ImmersiveTeaching.org</h1>
+
         <!--
+        <h1>Teaching with Virtual Reality</h1>
+        
             <h2>Evaluating the effective use of 360°, Augmented and Virtual Reality Technologies for Outstanding Teaching, Learning &amp; Assessment</h2>
         -->
     </header>
@@ -188,7 +182,7 @@
 
             <div class="content">
                  
-                    <img class="image" src="/vr.svg"/>
+                    <img class="image" src="vr.svg"/>
 
                  <div class="text">
                     <h1>Virtual Reality in the Classroom</h1>
@@ -273,14 +267,14 @@
 
     </div>
     <footer>
-    <small id="reference">Maltby, J. M. 2018. <em>Practical Immersive Learning.</em> [ONLINE] Available at: https://practicalimmersivelearning.com.</small>
+    <small id="reference">Maltby, J. M. 2018. <em>Teaching with Virtual Reality.</em> [ONLINE] Available at: https://teachingwithvirtualreality.com.</small>
 
     <small>
             Support by the <a href='https://www.et-foundation.co.uk'>Education &amp; Training Foundation</a> &middot; Project lead by <a href='https://www.plumpton.ac.uk'>Plumpton College</a> &middot; <a href='https://creativecommons.org/licenses/by/4.0/legalcode'>Creative Commons Attribution License</a> &middot; <a href='https://twitter.com/@jmichaelmaltby'>Contact the Author</a></small>
     </footer>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="/fullpage/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="fullpage/jquery.fullPage.js"></script>
 
     <script type="text/javascript">
     // two variables to store anchors and tooltips
