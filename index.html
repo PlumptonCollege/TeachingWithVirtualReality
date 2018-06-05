@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Teaching with Virtual Reality</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
 
     <link rel="stylesheet" type="text/css" href="fullpage/jquery.fullpage.css" />
     <link rel="stylesheet" type="text/css" href="animate.css" />
@@ -27,11 +28,12 @@
         }
 
         .content {
-            padding:6rem 12rem 6rem 6rem;
+            padding:0 12rem 0 6rem;
             overflow: auto;
             box-sizing: border-box;
             text-align: left;
             width:100%;
+            overflow: visible;
         }
         .image {
             width:32%;
@@ -66,7 +68,7 @@
             font-family: 'Source Sans Pro', sans-serif;
         }
         p {
-            font-size:1em;
+            font-size:1.25em;
         }
 
         [data-animation] {
@@ -80,7 +82,7 @@
             background:#fefefe;
             background: linear-gradient( rgba(254,254,254,1), rgba(254,254,254,0) );
             
-            z-index:99999;
+            z-index:99;
             position: fixed;
             top:0;
             left:0;
@@ -123,7 +125,7 @@
             font-family: 'Source Sans Pro', sans-serif;
             padding:2rem 2rem 1rem 2rem;
            color:#999;
-            z-index:99999;
+            z-index:99;
             font-size:0.9em;
         }
 
@@ -163,7 +165,97 @@
             max-width:1366px;
         }
 
-  
+        button:focus {
+            outline: none;
+        }
+
+        .logos {
+            text-align: center;
+        }
+        .logos img {
+            width:9em;
+            padding:1em;
+           overflow:auto;
+        }
+        .logos--smaller img {
+            width:5em;
+        }
+
+        .buttons {
+            padding-top:2em;
+            clear: both;
+             overflow: auto;
+        }
+        .button-previous {
+            float:left;
+        }
+        .button-next {
+            float:right;
+        }
+
+        .logos a {
+            display:inline-block;
+            transition:transform 0.5s ease; 
+            text-decoration:none;
+            color:#111;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+            font-weight:700;
+            padding:1em;
+        }
+        .logos a:hover {
+            transform:scale(1.25);
+            background:#fff;
+            box-shadow:0 0 1em rgba(0,0,0,0.1);
+        }
+
+
+        .tiles {
+           /* width:100%;*/
+           text-align: center;
+           margin-top:2em;
+        }
+        .tiles a {
+            display:inline-block;
+            transition:opacity 0.5s ease; 
+            text-decoration:none;
+            color:#111;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+            font-weight:700;
+            font-size:0.7em;
+            margin:0 0 1em 0;
+            opacity:0.75;
+        } 
+        .tiles a:hover {
+            opacity:1;
+        }
+
+        .tiles a span {
+            text-align: center;
+            display:block;
+        }
+
+         .tiles img {
+            width:18em;
+            padding:0;
+           overflow:auto;
+        }
+
+
+
+ 
+
+        .logos a span {
+            text-align: center;
+            display:block;
+        }
+
+        .icon {
+            display:inline-block !important;
+        }
+
+
     </style>
 </head>
 <body>
@@ -178,7 +270,7 @@
 
 
     <div id="fullpage">
-        <div class="section" data-navigation="home|Home">
+        <div class="section" data-navigation="introduction|Introduction">
             
 
             <div class="content">
@@ -186,82 +278,243 @@
                     <img class="image" src="vr.svg"/>
 
                  <div class="text">
-                    <h1>Teaching with Virtual Reality</h1>
-                    <h2>In 2018, as part of the Education &amp; Training Foundations' Outstanding Teaching Learning &amp; Assessment grant programme, a partnership of Sussex further education providers explored the effective use of 360°, augmented and virtual reality technologies within the classroom.</h2>
+                    <h1>Teaching with <br/>Virtual Reality</h1>
+                    <p>In 2018, as part of the Education &amp; Training Foundations' Outstanding Teaching Learning &amp; Assessment grant programme, a partnership of Sussex further education providers explored the effective use of 360°, augmented and virtual reality technologies within the classroom.</p>
 
-                    <h2>This website is an interactive guide for educators to learn</h2>
+                    <p>This website is an interactive guide for educators to learn how they can start experimenting with immersive technologies within their teaching.</p>
 
                 </div>
                 
 
-    
-                <button style="clear:both" class="button-next">Let's get started!</button>
+                <div class="buttons">
+                <button class="button-next">Let's get started!</button>
+                </div>
     
             </div>
        
         </div>
-        <div class="section">
+        <div class="section" data-navigation="partners|Project Partners">
                 <div class="content">
                 <h1>Project Partners</h1>
                     
-                    <h2 data-animation="fadeInUp">The project would not have succeeded without the hard work of the students and staff at the partner colleges:</h2>
-                    
-                    <h2 data-animation="fadeInUp">Thank you also to the funders, mentor organisations and broadcast partners for supporting the project:</h2>
-                    
+                    <p data-animation="fadeInUp">The project would not have succeeded without the hard work of the students and staff at partner colleges, and the support of the project's funders, mentors and broadcasters:</p>
+                    <div class="logos">
+                    <img data-animation="fadeInUp" src="partners/plumpton.png" />
+                    <img data-animation="fadeInUp" src="partners/gbmc.png" />
+                    <img data-animation="fadeInUp" src="partners/sussexdowns.png" />
+                    </div>
+                    <div class="logos logos--smaller">
+                    <img data-animation="fadeInUp" src="partners/etf.jpg" />
+                    <img data-animation="fadeInUp" src="partners/creativeeducation.png" />
+                    <img data-animation="fadeInUp" src="partners/fesussex.jpg" />
+
+                    <img data-animation="fadeInUp" src="partners/aoc.jpg" />
+                    <img data-animation="fadeInUp" src="partners/landex.jpg" />
+                     <img data-animation="fadeInUp" src="partners/jisc.png" />
+
+                    <img data-animation="fadeInUp" src="partners/sussex.png" />
+                    <img data-animation="fadeInUp" src="partners/brighton.jpg" />
+                    </div>
+
+                    <div data-animation="fadeIn">
+                        <div class="buttons">
+                            <button class="button-previous">Previous</button>
+                            <button class="button-next">Next</button>
+                        </div>
+                    </div>
+
                     </div>
         </div>
-        <div class="section">
+        <div class="section" data-navigation="why-vr|Why VR? Why Now?">
             <div class="content">
                <h1>Why Virtual Reality? Why now?</h1>
                     
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+                    <p data-animation="fadeInUp">Emerging technologies like 360° photography, 360° video, augmented and virtual reality could have the potential to allow teachers to introduce immersive environments that enhance and accelerate their student’s learning outcomes.</p>
+                    <p data-animation="fadeInUp">Entry-level immersive technology has reached a price and complexity point where it is now accessible to the average classroom. But how can teachers effectively integrate these technologies within their lessons?</p>
+                    
+                    <div data-animation="fadeIn">
+                        <div class="buttons">
+                            <button class="button-previous">Previous</button>
+                            <button class="button-next">Next</button>
+                        </div>
+                    </div>
+
            </div>
         </div>
-        <div class="section">
+        <div class="section" data-navigation="types|Types of Technology">
                 <div class="content">
-                   <h1>Types of Immersive Technologies</h1>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+                   <h1>Types of Immersive Technology</h1>
+                   <p>Click on the icons to explore four different types of immersive technology identified in the project. Which types do you think could be accessible in the classroom?</p>        
+                   <div class="logos">
+                       <div class="icon">
+                        <div data-animation="fadeInUp">
+                            <a data-fancybox="types" data-type="ajax" data-src="popups/types/360.html" href="javascript:;"><img src="icons/360.svg" /><span>360 Photography</span></a>
+                        </div>
+                       </div>
+
+                       <div class="icon">
+                        <div data-animation="fadeInUp">
+                            <a data-fancybox="types" data-type="ajax" data-src="popups/types/video.html" href="javascript:;"><img src="icons/vr.svg" /><span>Immersive Video</span></a>
+                        </div>
+                       </div>
+
+                       <div class="icon">
+                        <div data-animation="fadeInUp">
+                            <a data-fancybox="types" data-type="ajax" data-src="popups/types/ar.html" href="javascript:;"><img src="icons/ar.svg" /><span>Augmented &amp; Mixed</span></a>
+                        </div>
+                       </div>
+
+                       <div class="icon">
+                        <div data-animation="fadeInUp">
+                            <a data-fancybox="types" data-type="ajax" data-src="popups/types/cg.html" href="javascript:;"><img src="icons/cgi.svg" /><span>Computer Generated</span></a>
+                        </div>
+                       </div>
+                   </div>
+                   <div data-animation="fadeIn">
+                        <div class="buttons">
+                            <button class="button-previous">Previous</button>
+                            <button class="button-next">Next</button>
+                        </div>
+                    </div>
+
                </div>
             </div>
 
-            <div class="section">
+            <div class="section" data-navigation="teaching-learning|Teaching &amp; Learning">
                     <div class="content">
-                       <h1>Types of Learning Activities</h1>
-                            
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
-                   </div>
+                       <h1>Impact on Teaching &amp; Learning</h1>
+                       <p>The project identified four different areas where immersive technologies could have an impact teaching &amp; learning. Click on the icons to learn more. Which areas do you think could be impacted by VR?</p>        
+                   
+                        <div class="logos">
+                            <div class="icon">
+                                <div data-animation="fadeInUp">
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/types/360.html" href="javascript:;"><img src="icons/intro.svg" /><span>Instruction or Orientation</span></a>
+                                </div>
+                            </div>
+
+                            <div class="icon">
+                                <div data-animation="fadeInUp">
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/types/video.html" href="javascript:;"><img src="icons/retrieve.svg" /><span>Knowledge Retrieval</span></a>
+                                </div>
+                            </div>
+
+                            <div class="icon">
+                                <div data-animation="fadeInUp">
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/types/ar.html" href="javascript:;"><img src="icons/practicals.svg" /><span>Practical Skills</span></a>
+                                </div>
+                            </div>
+
+                            <div class="icon">
+                                <div data-animation="fadeInUp">
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/types/cg.html" href="javascript:;"><img src="icons/assess.svg" /><span>Assessment</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-animation="fadeIn">
+                                <div class="buttons">
+                                    <button class="button-previous">Previous</button>
+                                    <button class="button-next">Next</button>
+                                </div>
+                            </div>
+                    </div>
                 </div>
 
-                <div class="section">
+                <div class="section" data-navigation="case-studies|Case Studies">
                         <div class="content">
                            <h1>Explore the Case Studies</h1>
-                                
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+                           <div class="tiles">
+
+                            <div class="icon">
+                                <div>
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/studies/1.html" href="javascript:;"><img src="photos/1.jpg" /><span>Animal Care at Plumpton College</span></a>
+                                </div>
+                            </div>
+
+                            <div class="icon">
+                                <div>
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/studies/x.html" href="javascript:;"><img src="photos/2.jpg" /><span>Countryside at Plumpton College</span></a>
+                                </div>
+                            </div>
+
+                            <div class="icon">
+                                <div>
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/studies/x.html" href="javascript:;"><img src="photos/4.jpg" /><span>Horticulture at Plumpton College</span></a>
+                                </div>
+                            </div>
+
+
+
+
+                             <div class="icon">
+                                <div>
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/studies/x.html" href="javascript:;"><img src="photos/3.jpg" /><span>Agriculture at Plumpton College</span></a>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <div>
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/studies/x.html" href="javascript:;"><img src="photos/x.png" /><span>Case Study</span></a>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <div>
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/studies/x.html" href="javascript:;"><img src="photos/x.png" /><span>Case Study</span></a>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <div>
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/studies/x.html" href="javascript:;"><img src="photos/x.png" /><span>Case Study</span></a>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <div>
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/studies/x.html" href="javascript:;"><img src="photos/x.png" /><span>Case Study</span></a>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <div>
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/studies/x.html" href="javascript:;"><img src="photos/x.png" /><span>Case Study</span></a>
+                                </div>
+                            </div>
+                            <div class="icon">
+                                <div>
+                                    <a data-fancybox="types" data-type="ajax" data-src="popups/studies/x.html" href="javascript:;"><img src="photos/x.png" /><span>Case Study</span></a>
+                                </div>
+                            </div>
+
+
+                           
+                        </div>
+
+                        <div data-animation="fadeIn">
+                                <div class="buttons">
+                                    <button class="button-previous">Previous</button>
+                                    <button class="button-next">Next</button>
+                                </div>
+                            </div>     
                        </div>
                     </div>
 
-                    <div class="section">
+                    <div class="section" data-navigation="students|Student Evaluations">
                             <div class="content">
                                <h1>Student Evaluations</h1>
                                     
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+                                    <p> ... </p>        
                            </div>
                         </div>
 
-                        <div class="section">
+                        <div class="section" data-navigation="teachers|Teacher Evaluations">
                                 <div class="content">
                                    <h1>Teacher Evaluations</h1>
                                         
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+                                        <p> ... </p>        
                                </div>
                             </div>
 
-                        <div class="section">
+                        <div class="section" data-navigation="conclusion|Conclusion">
                                 <div class="content">
                                    <h1>Project Conclusion</h1>
                                         
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Iam in altera philosophiae parte. Quare conare, quaeso. Sed in rebus apertissimis nimium longi sumus. Nam, ut sint illa vendibiliora, haec uberiora certe sunt. Animum autem reliquis rebus ita perfecit, ut corpus; Duo Reges: constructio interrete. </p>        
+                                        <p> ... </p>        
                                </div>
                             </div>
     
@@ -276,6 +529,10 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="fullpage/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+    $.fancybox.default.transitionEffect = 'slide';
+    </script>
 
     <script type="text/javascript">
     // two variables to store anchors and tooltips
