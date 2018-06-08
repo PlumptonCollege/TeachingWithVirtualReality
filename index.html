@@ -49,10 +49,14 @@
         }
 
         .text {
-            width:60%;
+            width:55%;
             float:left;
             display:block;
             height:100%;
+        }
+
+        .text.right {
+            float:right;
         }
 
         h1 {
@@ -128,10 +132,11 @@
             right:0;
             text-align: right;
             font-family: 'Source Sans Pro', sans-serif;
-            padding:2rem 2rem 1rem 2rem;
+            padding:0.75em 2rem 0.75em 2rem;
            color:#999;
             z-index:99;
-            font-size:0.9em;
+            font-size:0.8em;
+            background:white;
         }
 
         footer small {
@@ -158,6 +163,7 @@
             line-height: 0;
             transition:background,0.2s ease;
             float:right;
+            min-width:6em;
         }
         button:hover {
             cursor:pointer;
@@ -187,7 +193,7 @@
         }
 
         .buttons {
-            padding-top:2em;
+            padding-top:4em;
             clear: both;
              overflow: auto;
         }
@@ -267,20 +273,25 @@
         }
 
         .buttons {
-            display:none;
+            /*display:none;*/
         }
 
         button:focus, a:focus {outline:0;}
 
          .section:nth-child(1) {
-            background:url(photos/WhyVR.jpg);
+            background:url(photos/slide1.jpg);
             background-repeat: no-repeat;
             background-size:cover;
         }
         .section:nth-child(3) {
-            background:url(photos/WhyVR.jpg);
+            background:url(photos/slide1.jpg);
             background-repeat: no-repeat;
             background-size:cover;
+        }
+
+        h3 a {
+            color:#111;
+            text-decoration: none;
         }
 
     </style>
@@ -307,16 +318,15 @@
                 -->
 
                  <div class="text">
-                    <h1>Practical Virtual Reality [Draft Publication]</h1>
-                    <p>In 2018, as part of the Education &amp; Training Foundations' Outstanding Teaching Learning &amp; Assessment grant programme, a partnership of Sussex further education providers explored the effective use of 360°, augmented and virtual reality technologies within the classroom.</p>
+                    <h1>Teaching with Virtual Reality (July 2018)</h1>
+                    <h3><a href="">www.teachingwithvirtualreality.com</a></h3>
 
-                    <p>This website is an interactive guide for educators to learn how they can start experimenting with immersive technologies within their teaching.</p>
-
-                </div>
-                
+                    <p>In 2018, as part of the Education &amp; Training Foundations' Outstanding Teaching Learning &amp; Assessment grant programme, a partnership of Sussex further education providers in the United Kingdom explored the effective use of 360°, augmented and virtual reality technologies within the classroom.</p>
+            
 
                 <div class="buttons">
-                <button class="button-next">Let's get started!</button>
+                <button class="button-next">Next &darr;</button>
+                </div>
                 </div>
     
             </div>
@@ -325,8 +335,7 @@
         <div class="section" data-navigation="partners|Project Partners">
                 <div class="content">
                 <h1>Project Partners</h1>
-                    
-                    <p data-animation="fadeInUp">The project would not have succeeded without the hard work of the students and staff at partner colleges, and the support of the project's funders, mentors and broadcasters:</p>
+                    <p data-animation="fadeInUp">The project would not have succeeded without the hard work of the students and staff at partner colleges, and the support of the project's funders, mentors and broadcast organisations.</p>
                     <div class="logos">
                     <a href="https://www.plumpton.ac.uk">
                     <img data-animation="fadeInUp" src="partners/plumpton.png" />
@@ -368,8 +377,8 @@
 
                     <div data-animation="fadeIn">
                         <div class="buttons">
-                            <button class="button-previous">Previous</button>
-                            <button class="button-next">Next</button>
+                            <button class="button-previous">&uarr; Previous</button>
+                            <button class="button-next">Next &darr;</button>
                         </div>
                     </div>
 
@@ -377,18 +386,20 @@
         </div>
         <div class="section" data-navigation="why-vr|Why VR? Why Now?">
             <div class="content">
-               <h1>Why Virtual Reality? Why now?</h1>
+                <div class="text right">
+               <h1>Why Immersive Teaching?</h1>
                     
                     <p data-animation="fadeInUp">Emerging technologies like 360° photography, 360° video, augmented and virtual reality could have the potential to allow teachers to introduce immersive environments that enhance and accelerate their student’s learning outcomes.</p>
-                    <p data-animation="fadeInUp">Entry-level immersive technology has reached a price and complexity point where it is now accessible to the average classroom. But how can teachers effectively integrate these technologies within their lessons?</p>
-                    
+                    <p data-animation="fadeInUp">Entry-level immersive technology has reached a price and complexity point where it is now accessible to the average classroom.</p>
+                    <p data-animation="fadeInUp">How can the average teacher effectively integrate these technologies within their lessons?</p>
+
                     <div data-animation="fadeIn">
                         <div class="buttons">
-                            <button class="button-previous">Previous</button>
-                            <button class="button-next">Next</button>
+                            <button class="button-previous">&uarr; Previous</button>
+                            <button class="button-next">Next &darr;</button>
                         </div>
                     </div>
-
+                </div>
            </div>
         </div>
         <div class="section" data-navigation="immersive-technology|Immersive Technology">
@@ -422,8 +433,8 @@
                    </div>
                    <div data-animation="fadeIn">
                         <div class="buttons">
-                            <button class="button-previous">Previous</button>
-                            <button class="button-next">Next</button>
+                            <button class="button-previous">&uarr; Previous</button>
+                            <button class="button-next">Next &darr;</button>
                         </div>
                     </div>
 
@@ -462,8 +473,8 @@
                         </div>
                         <div data-animation="fadeIn">
                                 <div class="buttons">
-                                    <button class="button-previous">Previous</button>
-                                    <button class="button-next">Next</button>
+                                    <button class="button-previous">&uarr; Previous</button>
+                                    <button class="button-next">Next &darr;</button>
                                 </div>
                             </div>
                     </div>
@@ -498,10 +509,10 @@
 
     </div>
     <footer>
-    <small id="reference">Maltby, J. M. 2018. <em>Teaching with Virtual Reality.</em> [ONLINE] Available at: https://teachingwithvirtualreality.com.</small>
+    <small id="reference">Maltby, J. M. and Danks, M., 2018. <em>Teaching with Virtual Reality.</em> [ONLINE] Available at: https://teachingwithvirtualreality.com.</small>
 
     <small>
-            Support by the <a href='https://www.et-foundation.co.uk'>Education &amp; Training Foundation</a> &middot; Project lead by <a href='https://www.plumpton.ac.uk'>Plumpton College</a> &middot; <a href='https://creativecommons.org/licenses/by/4.0/legalcode'>Creative Commons Attribution License</a> &middot; <a href='https://jamesmichaelmaltby.com'>Contact the Author</a></small>
+            Support by the <a href='https://www.et-foundation.co.uk'>Education &amp; Training Foundation</a> &middot; Project lead by <a href='https://www.plumpton.ac.uk'>Plumpton College</a> &middot; <a href='https://creativecommons.org/licenses/by/4.0/legalcode'>Creative Commons Attribution License</a> &middot; <a href='https://jamesmichaelmaltby.com'>Contact the Editor</a></small>
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
