@@ -196,6 +196,7 @@
             padding-top:4em;
             clear: both;
              overflow: auto;
+             display:none;
         }
         .button-previous {
             float:left;
@@ -318,11 +319,12 @@
                 -->
 
                  <div class="text">
-                    <h1>Teaching with Virtual Reality (July 2018)</h1>
+                    <h1>Teaching with<Br/>Virtual Reality</h1>
                     <h3><a href="">www.teachingwithvirtualreality.com</a></h3>
 
                     <p>In 2018, as part of the Education &amp; Training Foundations' Outstanding Teaching Learning &amp; Assessment grant programme, a partnership of Sussex further education providers in the United Kingdom explored the effective use of 360°, augmented and virtual reality technologies within the classroom.</p>
-            
+                    
+                    <p>The partnership will be publishing a series of case studies of teaching with virtual reality, an online best practice guide and final report here in July 2018</p>
 
                 <div class="buttons">
                 <button class="button-next">Next &darr;</button>
@@ -330,8 +332,8 @@
                 </div>
     
             </div>
-       
         </div>
+        <!---
         <div class="section" data-navigation="partners|Project Partners">
                 <div class="content">
                 <h1>Project Partners</h1>
@@ -506,7 +508,7 @@
                                </div>
                             </div>
     
-
+                        -->
     </div>
     <footer>
     <small id="reference">Maltby, J. M. and Danks, M., 2018. <em>Teaching with Virtual Reality.</em> [ONLINE] Available at: https://teachingwithvirtualreality.com.</small>
@@ -541,12 +543,12 @@
 
         $(document).ready(function() {
             $('#fullpage').fullpage({
-                navigation: true,
-                parallax: true,
+                /*navigation: true,
         		navigationPosition: 'right',
                 navigationTooltips: tooltips,
+                showActiveTooltip:true,*/
                 anchors:anchors,
-                showActiveTooltip:true,
+                parallax: true,
                /* anchors: anchors,*/
                  // sectionsColor: ['#eceff1','#fefefe'],
                 afterLoad: function(anchorLink, index){
