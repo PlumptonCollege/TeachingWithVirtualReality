@@ -28,7 +28,7 @@
         }
 
         .content {
-            padding:0 12rem 4rem 6rem;
+            padding:0 6rem 4rem 6rem;
             overflow: auto;
             box-sizing: border-box;
             text-align: left;
@@ -98,10 +98,42 @@
             right:0;
             text-align: left;
             font-family: 'Playfair Display', serif;
-            padding:0.75em 2rem 0.75em 2rem;
+            padding:1.5em 6rem 1.5em 6rem;
+            
             font-size:0.8em;
             background:#fefefe;
-            height:52px;
+            /*height:52px;*/
+        }
+        header h1 a {
+            font-family: 'Source Sans Pro', sans-serif;
+            color:#222;
+            text-decoration: none;
+            font-size:1.5rem;
+        }
+        header nav {
+            text-align:right;
+            float:right;
+        }
+
+        header nav ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+
+        header nav li {
+            display:inline-block;
+        }
+
+        header nav li a {
+            text-decoration: none;
+            color:#999;
+               font-family: 'Source Sans Pro', sans-serif;
+               font-size:1.5em;
+               padding-left:1em;
+        }
+         header nav li a:hover {
+            color:#222;
         }
 
         header h1 {
@@ -301,7 +333,16 @@
 </head>
 <body>
     <header>
+            <h1><a href="">www.teachingwithvirtualreality.com</a></h1>
+            <nav>
 
+                <ul>
+                    <li>
+                        <a href="#introduction">Part 1. Introduction</a>
+                        <a href="#introduction">Part 2. State of Virtual Reality</a>
+                    </li>
+                </ul>
+            </nav>
         <!--
         <h1>Teaching with Virtual Reality</h1>
         
@@ -322,7 +363,7 @@
 
                  <div class="text">
                     <h1>Teaching with<Br/>Virtual Reality</h1>
-                    <h3><a href="">www.teachingwithvirtualreality.com</a></h3>
+                    
 
                     <p>In 2018, as part of the Education &amp; Training Foundations' Outstanding Teaching Learning &amp; Assessment grant programme, a partnership of Sussex training providers in the United Kingdom explored the effective use of 360°, augmented and virtual reality technologies within the classroom.</p>
                     
@@ -335,7 +376,7 @@
     
             </div>
         </div>
-        <!---
+        
         <div class="section" data-navigation="partners|Project Partners">
                 <div class="content">
                 <h1>Project Partners</h1>
@@ -510,13 +551,13 @@
                                </div>
                             </div>
     
-                        -->
+                  
     </div>
     <footer>
-    <small id="reference">Maltby, J. M. and Danks, M., 2018. <em>Teaching with Virtual Reality.</em> [ONLINE] Available at: https://teachingwithvirtualreality.com.</small>
+    <small id="reference">Maltby, J. M., 2018. <em>Teaching with Virtual Reality.</em> [ONLINE] Available at: https://teachingwithvirtualreality.com.</small>
 
     <small>
-            Support by the <a href='http://www.et-foundation.co.uk/supporting/support-practitioners/improvements-in-teacher-learning-and-assessment/'>Education &amp; Training Foundation</a> &middot; Project lead by <a href='https://www.plumpton.ac.uk'>Plumpton College</a> &middot; <a href='https://creativecommons.org/licenses/by/4.0/legalcode'>Creative Commons Attribution License</a> &middot; <a href='https://jamesmichaelmaltby.com'>Contact the Editor</a></small>
+            Support by the <a href='http://www.et-foundation.co.uk/supporting/support-practitioners/improvements-in-teacher-learning-and-assessment/'>Education &amp; Training Foundation</a> &middot; Project lead by <a href='https://www.plumpton.ac.uk'>Plumpton College</a> &middot; <a href='https://creativecommons.org/licenses/by/4.0/legalcode'>Creative Commons Attribution License</a> &middot; <a href='https://jamesmichaelmaltby.com'>Contact the Author</a></small>
     </footer>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -551,7 +592,7 @@
                 showActiveTooltip:true,*/
                 anchors:anchors,
                 parallax: true,
-               /* anchors: anchors,*/
+                anchors: anchors,
                  // sectionsColor: ['#eceff1','#fefefe'],
                 afterLoad: function(anchorLink, index){
                     console.log(index);
