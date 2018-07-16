@@ -1,0 +1,702 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Teaching with Virtual Reality</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="fullpage/jquery.fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="animate.css" />
+
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            color:#111;
+            background:#fefefe;
+            text-rendering: optimizeLegibility;
+            font-smooth: always;
+            font-smoothing: antialiased;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding:0;
+            margin:0;
+            /*font-size: calc(8px + 8 * ((100vw - 320px) / (1366-320) ));*/
+        }
+        .fp-tooltip {
+            color:#111 !important;
+        }
+
+        .content {
+            padding: 4rem 1.5rem;
+            overflow: auto;
+            box-sizing: border-box;
+            text-align: left;
+            width:100%;
+            overflow: visible;
+        }
+        .image {
+            width:32%;
+            height:100%;
+            float:left;
+            display:block;
+            padding-top: 2.5rem;
+        }
+        .image img {
+            width:100%;
+        }
+        .image ~ .text {
+            margin-left:8%;
+        }
+        .text ~ .image {
+            margin-left:8%;
+        }
+
+        .text {
+            width:50%;
+            float:left;
+            display:block;
+            height:100%;
+        }
+
+        .text.right {
+            float:right;
+        }
+
+        h1 {
+            font-size:3.5em;
+            padding:0;
+            margin:0;
+        }
+        h2 {
+            font-size:2.5em;
+            font-weight: 700;
+        }
+        h3 {
+            font-size:1.5em;
+            font-weight: 700;
+        }
+        p, h3 {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        p {
+            font-size:1.35em;
+            line-height:1.5;
+        }
+
+        [data-animation] {
+            visibility: hidden;
+        }
+        [data-animation].animated {
+            visibility: visible;
+        }
+        header {
+            
+            /*background:#fefefe;
+            background: linear-gradient( rgba(254,254,254,1), rgba(254,254,254,0) );*/
+            
+            z-index:99;
+            position: fixed;
+            top:0;
+            left:0;
+            right:0;
+            text-align: left;
+            font-family: 'Playfair Display', serif;
+            padding:1.5em 6rem 1.5em 6rem;
+            
+            font-size:0.8em;
+            background:#fefefe;
+            /*height:52px;*/
+        }
+        header h1 a {
+            font-family: 'Source Sans Pro', sans-serif;
+            color:#222;
+            text-decoration: none;
+            font-size:1.5rem;
+        }
+        header nav {
+            text-align:right;
+            float:right;
+        }
+
+        header nav ul {
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+
+        header nav li {
+            display:inline-block;
+        }
+
+        header nav li a {
+            text-decoration: none;
+            color:#999;
+               font-family: 'Source Sans Pro', sans-serif;
+               font-size:1.5em;
+               padding-left:1em;
+        }
+         header nav li a:hover {
+            color:#222;
+        }
+
+        header h1 {
+            font-size:1.5em;
+            font-weight:700;
+            padding:0;
+            margin:0;
+            color:#111;
+            float:left;
+        }
+        header h2 {
+            font-size:1em;
+            font-weight:400;
+            padding:0;
+            margin:0;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin:0.25rem 0;
+            float:right;
+            color:#aaa;
+        }
+
+        footer {
+            
+            /*background:#fefefe;
+            background: linear-gradient( rgba(254,254,254,0), rgba(254,254,254,1) );*/
+            
+            position: fixed;
+            bottom:0;
+            left:0;
+            right:0;
+            text-align: right;
+            font-family: 'Source Sans Pro', sans-serif;
+            padding:0.75em 2rem 0.75em 2rem;
+           color:#999;
+            z-index:99;
+            font-size:0.8em;
+            background:#fefefe;
+        }
+
+        footer small {
+            display:block;
+            margin:0.5rem 0;
+        }
+        footer a, footer a:link, footer a:active {
+            color:#999;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            text-decoration: none;
+            color:inherit;
+        }
+        a.button, button {
+            border:1px solid #111;
+            padding:1.25em 1.5em;
+            background:transparent;
+            border-radius:2em;
+            font-size:1rem;
+            font-weight: 400;
+            color:#111;
+            font-family: 'Source Sans Pro', sans-serif;
+            line-height: 0;
+            transition:background,0.2s ease;
+            float:right;
+            min-width:6em;
+            width:100%;
+            display:inline-block;
+            text-align:center;
+            text-decoration:none;
+            margin:0.5rem 0;
+            box-sizing: border-box;
+        }
+        a.button:hover,button:hover {
+            cursor:pointer;
+            background:#111;
+            color:#fefefe;
+        }
+
+        .content {
+            margin: 0 auto 0 auto;
+            max-width:1366px;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .logos {
+            text-align: center;
+        }
+        .logos img {
+            width:9em;
+            padding:1em;
+           overflow:auto;
+        }
+        .logos--smaller img {
+            width:5em;
+        }
+
+        .buttons {
+            padding-top:4em;
+            clear: both;
+             overflow: auto;
+             display:none;
+        }
+        .button-previous {
+            float:left;
+        }
+        .button-next {
+            float:right;
+        }
+
+        .logos a {
+            display:inline-block;
+            transition:transform 0.5s ease; 
+            text-decoration:none;
+            color:#111;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+            font-weight:700;
+            /*padding:1em;*/
+        }
+        .logos a:hover {
+            transform:scale(1.25);
+           /* background:#fff;
+            box-shadow:0 0 1em rgba(0,0,0,0.1);*/
+        }
+
+
+        .tiles {
+           /* width:100%;*/
+           text-align: center;
+           margin-top:2em;
+        }
+        .tiles a {
+            display:inline-block;
+            transition:opacity 0.5s ease; 
+            text-decoration:none;
+            color:#111;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+            font-weight:700;
+            font-size:0.7em;
+           /* margin:0 0 1em 0;*/
+            opacity:0.75;
+        } 
+        .tiles a:hover {
+            opacity:1;
+        }
+
+        .tiles a span {
+            text-align: center;
+            display:block;
+        }
+
+         .tiles img {
+            width:18em;
+            padding:0;
+           overflow:auto;
+        }
+
+
+        .logos.popup a {
+            padding:0 1em;
+        }
+
+
+
+
+ 
+
+        .logos a span {
+            text-align: center;
+            display:block;
+        }
+
+        .icon {
+            display:inline-block !important;
+        }
+
+        .buttons {
+            /*display:none;*/
+        }
+
+        button:focus, a:focus {outline:0;}
+
+         .section:nth-child(1) {
+            background:url(photos/Slide1.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        /*
+        .section:nth-child(3) {
+            background:url(photos/Slide1.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }*/
+
+        h3 a {
+            color:#111;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+            <h1><a href="">www.teachingwithvirtualreality.com</a></h1>
+          
+            
+            <nav>
+
+                <ul>
+                    <li>
+                        <a href="#introduction">Part 1. Introduction</a>
+                        <a href="#introduction">Part 2. State of Virtual Reality</a>
+                    </li>
+                </ul>
+            </nav>
+        
+
+    </header>
+
+
+    <div id="fullpage">
+        <div class="section" data-navigation="introduction|Introduction">
+            
+
+            <div class="content">
+
+                 <!--
+                    <img class="image" src="vr.svg"/>
+                -->
+
+                 <div class="text">
+                    <h1>Teaching with<br/>Virtual Reality</h1>
+                    
+
+                    <p>In 2018, as part of the Education &amp; Training Foundations' Outstanding Teaching Learning &amp; Assessment grant programme, a partnership of Sussex training providers in the United Kingdom explored the effective use of 360°, augmented and virtual reality technologies within the classroom.</p>
+                    
+                    <p>Through this website you can learn more about teaching with virtual reality and explore example learning content created by the partner colleges.</p>
+
+                    <p>
+                        <a href="downloads/teaching-with-virutal-reality.pdf">Download the full report in PDF</a>
+                    </p>
+
+
+                </div>
+    
+            </div>
+                    </div>
+       
+        <div class="section" data-navigation="partners|Project Partners">
+                <div class="content">
+                <h1>Project Partners</h1>
+                    <p >The project would not have succeeded without the hard work of the students and staff at partner colleges, and the support of the project's funders, mentors and broadcast organisations.</p>
+                    <div class="logos">
+                    <a href="https://www.plumpton.ac.uk">
+                    <img data-animation="fadeInUp" src="partners/plumpton.png" />
+                    </a>
+                    <a href="https://www.gbmc.ac.uk">
+                    <img data-animation="fadeInUp" src="partners/gbmc.png" />
+                    </a>
+                    <a href="http://www.sussexdowns.ac.uk">
+                    <img data-animation="fadeInUp" src="partners/sussexdowns.png" />
+                    </a>
+                    </div>
+                    <div class="logos logos--smaller">
+                    <a href="http://www.et-foundation.co.uk/supporting/support-practitioners/improvements-in-teacher-learning-and-assessment/">
+                    <img data-animation="fadeInUp" src="partners/etf.jpg" />
+                    </a>
+                    <a href="https://www.creativeeducation.co.uk/">
+                    <img data-animation="fadeInUp" src="partners/creativeeducation.png" />
+                    </a>
+                    <a href="http://www.fesussex.org.uk/">
+                    <img data-animation="fadeInUp" src="partners/fesussex.jpg" />
+                    </a>
+
+                    <a href="https://www.aoc.co.uk/">
+                    <img data-animation="fadeInUp" src="partners/aoc.jpg" />
+                    </a>
+                     <a href="http://www.landex.org.uk/">
+                    <img data-animation="fadeInUp" src="partners/landex.jpg" />
+                    </a>
+                    <a href="https://www.jisc.ac.uk/">
+                     <img data-animation="fadeInUp" src="partners/jisc.png" />
+                     </a>
+                      <a href="https://www.sussex.ac.uk/">
+                    <img data-animation="fadeInUp" src="partners/sussex.png" />
+                    </a>
+                     <a href="https://www.brighton.ac.uk/">
+                    <img data-animation="fadeInUp" src="partners/brighton.jpg" />
+                    </a>
+                    </div>
+
+                    </div>
+        </div>
+        <div class="section" data-navigation="why-vr|Why VR? Why Now?">
+            <div class="content">
+                <div class="text1">
+               <h1>Why Immersive Teaching?</h1>
+                    
+                    <p >Emerging technologies like 360° photography, 360° video, augmented and virtual reality could have the potential to allow teachers to introduce immersive environments that enhance and accelerate their student’s learning outcomes. Entry-level immersive technology has reached a price and complexity point where it is could be accessible to the average classroom.</p>
+                    <p >The project therefore sought to answer the question of how the average teacher could effectively integrate these technologies within their lessons.</p>
+
+    
+                </div>
+           </div>
+        </div>
+        <div class="section" data-navigation="immersive-technology|Immersive Technology">
+                <div class="content">
+                   <h1>Types of Immersive Resources</h1>
+                   <p>Click on the icons to explore four different types of immersive technology identified in the project. Which types do you think could be accessible in the classroom?</p>        
+                   <div class="logos popup">
+                       <div class="icon">
+                        <div data-animation="fadeInUp">
+                            <a data-fancybox="types" data-type="ajax" data-src="popups/types/360.html" href="javascript:;"><img src="icons/360.svg" /><span>360 Photography</span></a>
+                        </div>
+                       </div>
+
+                       <div class="icon">
+                        <div data-animation="fadeInUp">
+                            <a data-fancybox="types" data-type="ajax" data-src="popups/types/video.html" href="javascript:;"><img src="icons/vr.svg" /><span>Immersive Video</span></a>
+                        </div>
+                       </div>
+
+                       <div class="icon">
+                        <div data-animation="fadeInUp">
+                            <a data-fancybox="types" data-type="ajax" data-src="popups/types/ar.html" href="javascript:;"><img src="icons/ar.svg" /><span>Augmented &amp; Mixed</span></a>
+                        </div>
+                       </div>
+
+                       <div class="icon">
+                        <div data-animation="fadeInUp">
+                            <a data-fancybox="types" data-type="ajax" data-src="popups/types/cg.html" href="javascript:;"><img src="icons/cgi.svg" /><span>Computer Generated</span></a>
+                        </div>
+                       </div>
+                   </div>
+
+               </div>
+            </div>
+
+            <div class="section" data-navigation="teaching-learning|Teaching &amp; Learning">
+                    <div class="content">
+                       <h1>Impact on Teaching &amp; Learning</h1>
+                       <p>The project identified four different areas where immersive technologies could have an impact teaching &amp; learning. Click on the icons to learn more. Which areas do you think could be impacted by VR?</p>        
+                   
+                        <div class="logos popup">
+                            <div class="icon">
+                                <div data-animation="fadeInUp">
+                                    <a data-fancybox="impact" data-type="ajax" data-src="popups/types/360.html" href="javascript:;"><img src="icons/intro.svg" /><span>Instruction or Orientation</span></a>
+                                </div>
+                            </div>
+
+                            <div class="icon">
+                                <div data-animation="fadeInUp">
+                                    <a data-fancybox="impact" data-type="ajax" data-src="popups/types/video.html" href="javascript:;"><img src="icons/retrieve.svg" /><span>Knowledge Retrieval</span></a>
+                                </div>
+                            </div>
+
+                            <div class="icon">
+                                <div data-animation="fadeInUp">
+                                    <a data-fancybox="impact" data-type="ajax" data-src="popups/types/ar.html" href="javascript:;"><img src="icons/practicals.svg" /><span>Practical Skills</span></a>
+                                </div>
+                            </div>
+
+                            <div class="icon">
+                                <div data-animation="fadeInUp">
+                                    <a data-fancybox="impact" data-type="ajax" data-src="popups/types/cg.html" href="javascript:;"><img src="icons/assess.svg" /><span>Assessment</span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                  <div class="section normalscroll" data-navigation="plumpton-college|Plumpton College">
+                     
+                                <div class="content">
+
+                                    <div class="image">  
+                                    <img src="photos/1.jpg"/>
+                                    <a href="#" class="button">Pet Store: Aquariam</a>
+                                    <a href="#" class="button">Pet Store: Gerbil Enclosure</a>
+                                    <a href="#" class="button">Pet Store: Reptile Enclosure</a>
+                                    </div>
+
+                                     <div class="text">
+                                   <h2>Assessing welfare for Animal Care</h2>
+                                   <h3>Plumpton College</h3>
+                                    <p>As part of their Level 3 Animal Management course, Plumpton College students were required to assess the husbandry regime of a local pet-store. However, the lecturer for the programme was unable to take a large class of students offside and could only run a classroom-based lesson. Instead, the teacher took a Theta S 360o video camera to the pet store and recorded immersive content at three locations around the shop. Using smart phones and head-mount VR goggles, these videos were then made available to students in a theory lesson where they were writing an essay for their course. One table in the lesson was pre-prepared with three headsets for students to immerse themselves in the environment and consider critically whether the store was meeting the needs of their animals. A video tour was also recorded using an iPad for students were too anxious to use the headsets.</p>
+                                    <p>It was found that the quality of the essays that were produced was higher compared to previous cohorts and the overall pass-percentage increased. The students would not have been to access the environment without the VR headsets and the activity provided an engaging way of applying the practical skill of evaluating husbandry regimes within theory lessons. However, the teacher found the classroom time-consuming to prepare as the content had to be pre-loaded onto staff mobile phones before the lessons. There was not enough time to setup the content on student mobile phones. A consequence of this trial was that Plumpton decided to concentrate on using Oculus Go for future lessons as it is easier to preload content in advance ready for a class. </p>        
+                                    </div>
+                               </div>
+                </div>
+
+                    <div class="section normalscroll" data-navigation="">
+                     
+                                <div class="content">
+
+                                    <div class="image">  
+                                    <img src="photos/2.jpg"/>
+                                    <a href="#" class="button">Attaching Trailer: Good Practice</a>
+                                    <a href="#" class="button">Attaching Trailer: Bad Practice</a>
+                                    </div>
+
+                                     <div class="text">
+                                   <h2>Attaching a trailer for Agriculture</h2>
+                                   <h3>Plumpton College</h3>
+                                   <p>The learning technology team wanted to experiment with different ways of creating a stand-alone learning resource. The 360o video was augmented with text panels explaining each learning step in sequence. Picture-in-picture overlays were also used to show multiple angles. A second video was created which demonstrated bad practice. The team added warning markers when mistakes occurred to prompt students. These resources required extensive post-production and would not be recommended for every virtual reality learning video. However, because the material will be re-used in future years, it was important to create a polished resource.
+                                    </p>
+                                    <p>The instructors used the resources with both tablets and with virtual reality headsets. During theory lessons they encouraged students to watch the videos multiple times to reflect on the correct procedure. Students who had not yet attempted the skills found the resource particularly useful. It helped to alleviate anxiety and improved their engagement with the real task.
+                                    </p>
+                                    <p>The instructors were initially unsure how to introduce the resource into their lessons because they felt they did not have enough devices for every student. They were encouraged to use headsets as a station activity, but were still keen to be able to use the resources on a projector with the whole class. For future resources, the team learnt it is important to publish videos online so they can be accessed through laptops and desktop computers.
+                                    </p>
+
+                                    </div>
+                                </div>
+                     </div>
+
+                         <div class="section normalscroll" data-navigation="">
+                     
+                                <div class="content">
+
+                                    <div class="image">  
+                                    <img src="photos/2.jpg"/>
+                                    <a href="#" class="button">Forest Habitat</a>
+                                    </div>
+
+                                     <div class="text">
+                                   <h2>Identifying habitats for Countryside</h2>
+                                   <h3>Plumpton College</h3>
+                                   <p>The countryside division took part in two separate trials for this project.</p>
+                                   <p>
+In the first trial, the lecturer wished to capture scenes of the Level 2’s trip to Snowdonia to evaluate remote habitats. There were three teaching aims. Firstly, she wanted to use 360o learning resources with the group when they returned to help them re-experience the trip and retain knowledge. Secondly, some students were unable to go due to anxiety and she planned to use the photos as an activity for them when she returned to college. Finally, she plans to re-use the resources with next year’s cohort to orientate the students before they leave. She used a handheld 360o camera on the trip and the resources.</p>
+<p>
+In the featured trial, the countryside team wish to build a bank of different habitats that could be used in lessons during identification exercises. It was hoped that resources would engage students during theory classes and deepen understanding. Over the Spring, a learning technologist accompanied the class on countryside visits. They captured high-quality 3600 photographs and videos using the GoPro Fusion VR camera. These resources were loaded onto Oculus Go headsets and published through Vimeo. The team used the resources during classroom theory lessons, particularly targeting students who were not able to attend specific site visits. The teachers found the resources invaluable during the end of the programme when they needed to help students complete their portfolios and were unable to re-organise visits. Some students were nervous at first with using the VR headsets but were still able to access the same materials through tablets, desktops and the classroom projector. The team plan to build on the resources in the coming year to create a full suite of learning resources.
+                                    </p>
+                                   
+
+                                    </div>
+                                </div>
+                     </div>
+                       
+
+                        <div class="section normalscroll" data-navigation="">
+                     
+                                <div class="content">
+
+                                    <div class="image">  
+                                    <img src="photos/2.jpg"/>
+                                    <a href="#" class="button">View the app in the Oculus Go store</a>
+                                    </div>
+
+                                     <div class="text">
+                                   <h2>Exploring space equipment for Science</h2>
+                                   <h3>Plumpton College</h3>
+                          <p>
+Plumpton College wanted to run a trial that included computer generated environments to compare against 360o photography and video. The entry-level science teacher, planned to teach a series of lessons on how technology is used in space and enquired whether there was any pre-created virtual reality learning resources. The team found the official International Space Station Tour for Oculus Go. The VR app consists of an interactive replica of the ISS interspersed with learning videos and quizzes. In the classroom, Oculus Go headsets were used as a station within a carousel of activities. The learning objective for the activity was to explore the VR world and find examples of specialist equipment. Students then completed a written exercise on another station.</p>
+<p>
+The students found the mobile VR headset and the app engaging and the majority of the 40 learners spent on average ten minutes within the virtual environment. In hindsight, the teacher reflected that they would have changed the order of the stations so that students were prepared enough to meet the specific learning objective. Students who started with the VR activity were not yet ready to identify appropriate technology compared to students who used the headset towards the end of the session. There was also no formative assessment at the VR station, so it was difficult to ascertain how much learning took place beyond engagement in the subject.</p>
+                                   
+
+                                    </div>
+                                </div>
+                     </div>
+              
+
+        
+                        <div class="section" data-navigation="conclusion|Conclusion">
+                                <div class="content">
+                                   <h1>Project Conclusion</h1>
+                                    <p>Thank you for viewing </p>        
+                               </div>
+                            </div>
+    
+              
+    </div>
+    <footer>
+    <small id="reference">Maltby, J. M. (ed), 2018. <em>Teaching with Virtual Reality.</em> [ONLINE] Available at: https://teachingwithvirtualreality.com.</small>
+
+    <small>
+            Supported by the <a href='http://www.et-foundation.co.uk/supporting/support-practitioners/improvements-in-teacher-learning-and-assessment/'>Education &amp; Training Foundation</a> &middot; Project lead by <a href='https://www.plumpton.ac.uk'>Plumpton College</a> &middot; <a href='https://creativecommons.org/licenses/by/4.0/legalcode'>Creative Commons Attribution License</a> &middot; <a href='https://jamesmichaelmaltby.com'>Contact the Editor</a></small>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="fullpage/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+    <script type="text/javascript">
+    $.fancybox.default.transitionEffect = 'slide';
+    </script>
+
+    <script type="text/javascript">
+    // two variables to store anchors and tooltips
+        var anchors = [],
+            tooltips = [];
+        $('.section').each(function() {
+            // retrieve the attribute
+            var navigation = $(this).data('navigation');
+            if (!navigation)
+                return;
+
+            // the attribute data-navigation is built like : anchor|tooltip
+            var parts = navigation.split('|');
+
+            anchors.push(parts[0]);
+            tooltips.push(parts[1]);
+        });
+
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                /*navigation: true,
+        		navigationPosition: 'right',
+                navigationTooltips: tooltips,
+                showActiveTooltip:true,*/
+                anchors:anchors,
+                parallax: true,
+                anchors: anchors,
+                scrollBar:true,
+                normalScrollElements:'.normalscroll',
+                 // sectionsColor: ['#eceff1','#fefefe'],
+                afterLoad: function(anchorLink, index){
+                    console.log(index);
+                    $('[data-animation]').removeClass();
+                    var loadedSection = $(this);
+                    var index=0;
+                    loadedSection.find('[data-animation]').each(function() {
+                        $(this).addClass('animated');
+                        $(this).addClass( $(this).data('animation') );
+                        $(this).css('animation-delay', (index++ * 250)+'ms' );
+                    });
+                },
+                onLeave: function(anchorLink, index){
+                
+                }
+            });
+
+            $('.button-previous').click(function(){
+                $.fn.fullpage.moveSectionUp();
+            });
+            $('.button-next').click(function(){
+                $.fn.fullpage.moveSectionDown();
+            });
+
+            function formatDate(date) {
+                var monthNames = [
+                    "January", "February", "March",
+                    "April", "May", "June", "July",
+                    "August", "September", "October",
+                    "November", "December"
+                ];
+                var day = date.getDate();
+                var monthIndex = date.getMonth();
+                var year = date.getFullYear();
+                return day + ' ' + monthNames[monthIndex] + ' ' + year;
+            }
+            var now = new Date();
+            var date = formatDate(now);
+            $('#reference').append(' [Accessed ' + date + '].');
+        });
+    </script>
+</body>
+</html>
