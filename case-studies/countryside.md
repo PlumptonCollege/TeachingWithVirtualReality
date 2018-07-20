@@ -1,6 +1,8 @@
 ## Identifying Habitats for Countryside
 ### Plumpton College
 
+[![Identifying Habitats for Countryside](/images/case-studies/countryside.jpg "Identifying Habitats for Countryside")](/)
+
 The countryside division took part in two separate trials for this project.
 
 In the first trial, the lecturer wished to capture scenes of the Level 2’s trip to Snowdonia to evaluate remote habitats. There were three teaching aims. Firstly, she wanted to use 360o learning resources with the group when they returned to help them re-experience the trip and retain knowledge. Secondly, some students were unable to go due to anxiety and she planned to use the photos as an activity for them when she returned to college. Finally, she plans to re-use the resources with next year’s cohort to orientate the students before they leave. She used a handheld 360o camera on the trip and the resources.

@@ -1,6 +1,8 @@
 ## Identifying Equipment in the Garage for Motor-vehicle
 ### East Sussex College Group
 
+[![Identifying Equipment in the Garage for Motor-vehicle](/images/case-studies/motor-vehicle.jpg "Identifying Equipment in the Garage for Motor-vehicle")](/)
+
 The motor-vehicle team at ESCG wished to record 360o video of students undertaking various practical tasks in the garage. Students would then watch and reflect on their performance in the following theory lesson in order to encourage deeper analysis and knowledge retention.
 
 The college used the Theta V VR camera. This was chosen for its affordable price and quality of output. The quality of the eventual footage we captured was of a higher quality, but the team did come across a selection of issues using the camera. Firstly, recording footage longer than 5 minutes starts to become tricky to remove from the camera via USB connection. This meant video had to be transfer over a wireless connection to a mobile handset. The issue was caused by the Theta not charging effectively when transferring, and its battery life is not long enough to transfer large files. These factors caused significant delay in the completion of this case study.

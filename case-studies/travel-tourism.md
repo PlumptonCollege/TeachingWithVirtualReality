@@ -1,7 +1,7 @@
 ## Virtual Tours for Travel & Tourism
 ### East Sussex College Group
 
-[![Virtual Tours for Travel & Tourism](/images/1.jpg "Example Image")](/)
+[![Virtual Tours for Travel & Tourism](/images/case-studies/travel-tourism.jpg "Virtual Tours for Travel & Tourism")](/)
 
 ESCG approached their Travel and Tourism department to use Google Expeditions as a tool to take Travel and Tourism students on a virtual guided tour of somewhere they might have been learning about as part of their course. 
 

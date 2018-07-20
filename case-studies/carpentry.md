@@ -1,6 +1,8 @@
 ## Workshop Induction for Carpentry 
 ### East Sussex College Group
 
+[![Workshop Induction for Carpentry](/images/case-studies/carpentry.jpg "Workshop Induction for Carpentry")](/)
+
 For this case study, the ESCG wanted to create a resource that allowed users to explore the carpentry machine workshop. Collaborating with the lead carpentry lecturer, the innovation team chose a selection of machines that included a mix of those students would use as part of their course of study, and some that were only part of a level 3 course of study. For capture they used a Theta V VR camera to capture the photographic content, and to record 360 demonstrations of the machines in use.
 
 The team discovered while producing the content that it was possible to capture a large enough field of view of the workshop that only two 360 photos were needed. These were linked using the VR tour software 3D Vista, and the video content was then embedded into the resource. This was then uploaded to our servers to be shared. We discovered however that standard web servers do not support the correct video codec for 360 videos, so these were not displaying correctly. Instead, the videos were each uploaded to YouTube and shared.
