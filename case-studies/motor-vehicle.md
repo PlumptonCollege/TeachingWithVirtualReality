@@ -1,4 +1,4 @@
-## Identifying equipment in the garage for Motor-vehicle
+## Identifying Equipment in the Garage for Motor-vehicle
 ### East Sussex College Group
 
 The motor-vehicle team at ESCG wished to record 360o video of students undertaking various practical tasks in the garage. Students would then watch and reflect on their performance in the following theory lesson in order to encourage deeper analysis and knowledge retention.

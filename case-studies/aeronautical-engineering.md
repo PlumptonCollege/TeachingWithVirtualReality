@@ -1,4 +1,4 @@
-## Identifying airplane parts for Aeronautical Engineering
+## Identifying Airplane Parts for Aeronautical Engineering
 ### Greater Brighton Metropolitan College
 
 The aeronautics workshop at GBMC contains a large selection of specialist equipment that students need to become familiar with in a short period of time. The team saw the potential to take immersive 360o videos of tools and part in operation as both a student induction activity and as a regular refresher throughout their programme.

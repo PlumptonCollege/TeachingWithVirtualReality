@@ -1,4 +1,4 @@
-## Identifying habitats for Countryside
+## Identifying Habitats for Countryside
 ### Plumpton College
 
 The countryside division took part in two separate trials for this project.

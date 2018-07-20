@@ -1,6 +1,8 @@
 ## Virtual Tours for Travel & Tourism
 ### East Sussex College Group
 
+[![Virtual Tours for Travel & Tourism](/images/1.jpg "Example Image")](/)
+
 ESCG approached their Travel and Tourism department to use Google Expeditions as a tool to take Travel and Tourism students on a virtual guided tour of somewhere they might have been learning about as part of their course. 
 
 Whilst preparing for the trial, they also identified some promising content from YouTube shot in 360 that could accompany the planned Expedition. They focused efforts on the Great Barrier Reef for the most “wow” factor and found a suitable Expedition and YouTube video of the reef to use with students.
