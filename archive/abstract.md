@@ -1,3 +1,4 @@
+## Abstract
 
 Emerging technologies like 360° photography, video, augmented and virtual reality could have the potential to allow teachers to use digital environments in there practice in order to enhance and accelerate their student’s learning. Entry-level immersive technology has reached a price and complexity point where it is now accessible to the average classroom, but how can a teacher effectively integrate these technologies within their lessons?
 
