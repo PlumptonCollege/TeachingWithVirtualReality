@@ -117,13 +117,13 @@
       opacity: 0.6;
     }
 
-    sidebar {
+    header,sidebar {
       float:left;
       width:30%;
       padding-right:4em;
       overflow: auto;
       box-sizing:border-box;
-
+      clear:left;
     }
     nav {
       font-size:0.8rem;
@@ -145,9 +145,12 @@
       width:70%;
       overflow: auto;
       margin:0;
-      padding:0 0 4rem 0;
+      padding:1rem 0 4rem 0;
       box-sizing:border-box;
       position:relative;
+    }
+    main h1,main h2 {
+      padding: 0 2rem;
     }
     a + em {
       display:block;
@@ -215,9 +218,23 @@
       opacity:0.6;
     }
     .logo {
-      width:25%;
-      margin-right:1rem;
-      vertical-align: middle;
+      width:100%;
+    }
+    header {
+      padding:0;
+      margin:0;
+      text-align: center;
+      display:inline-block;
+    }
+    header h1 {
+      text-align: center;
+      line-height:1;
+      padding:0;
+      margin:0;
+    }
+    nav h1 {
+      text-align: center;
+      color:rgb(0,65,105);
     }
     .left h1 {
       float:left;
@@ -227,27 +244,38 @@
       margin-top:2rem;
       text-align: right;
     }
+    sidebar h1 {
+      text-align: center;
+      font-size:1.5rem;
+      line-height:1.25;
+      font-weight:700;
+      margin:2rem 0 2rem 0;
+    }
+    sidebar h1 img {
+      width:60%;
+      margin:0 auto 0 auto;
+      display:block;
+    }
+    sidebar h1 a:link, sidebar h1 a:visited {
+      color:rgb(0,65,105);
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
 <div class="wrap">
-  <header id="top">
-      <div class="left">
-          <a href="/">
-            <h1>
-            <img class="logo" src="/images/partners/plumpton.png"/> Teaching with Virtual Reality
-          </h1>
-          </a>
-          </div>
-  <!--  <div class="right">
-    <a href="/">
-      <h2>www.teachingwithvirtualreality.com</h2>
-    </a>
-  </div> -->
-  </header>
-<sidebar>
+
+<sidebar id="top">
+
+    <h1>
+        <a href="/">
+          <img src="/images/partners/plumpton.png"/> 
+          Teaching with Virtual Reality
+        </a>
+      </h1>
+
 <nav>
-  
+
 {% for item in site.data.pages.toc %}
 <strong>{{ item.title }}</strong>
 <ul>

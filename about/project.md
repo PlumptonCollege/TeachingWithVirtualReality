@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Teaching with Virtual Reality
+title: Introduction
 subtitle: 
 permalink: /
 ---
