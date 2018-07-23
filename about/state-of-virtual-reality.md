@@ -7,7 +7,6 @@ permalink: /about/state-of-virtual-reality
 
 ![State of Virtual Reality](/images/about/state-of-virtual-reality.png "State of Virtual Reality")
 
-Partnership
 In the first phase of the project, the partnership researched the current state of virtual reality, trialled different types of technology and considered the potential impact on teaching and learning.
 
 The most immersive category of consumer virtual reality technology is often described as ‘Full Room VR’. These setups require a powerful desktop computer along with a dedicated headset. They allow the user to move around the environment and the controllers enable sophisticated interaction. The average setup costs approximately £2000. Most content is based on computer generated environments and is expensive to produce. Although some colleges have been experimenting with making a small number of Full Room VR setups available to students, the partnership decided early on that this technology was not yet accessible to the average classroom and therefore out of the scope of this project. However, it is hoped that the teaching approaches and evaluations discussed will be equally applicable to this type of technology.

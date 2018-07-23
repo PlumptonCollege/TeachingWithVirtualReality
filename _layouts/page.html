@@ -14,33 +14,66 @@
       font-size:16px;
       line-height:1.5;
       color:#222;
+      background:#fff;
+      font-smooth: auto;
+      -webkit-font-smoothing:optimizeLegability;
+      text-rendering: antialiased;
+    }
+    a:link,a:visited {
+      color:#0055aa;
+    }
+    a:hover {
+      text-decoration: none;
     }
     .wrap {
       max-width:960px;
       overflow:auto;
-      margin:1rem auto 0 auto; 
+      margin:0 auto 0 auto; 
       padding:0 1rem;
     }
     h1,h2,h3 {
       font-family:'Playfair Display';
+      font-family:'Source Sans Pro';
+    }
+    p {
+      font-size:1.2rem;
+      font-family:'Times','Times New Roman';
+      font-family:'Playfair Display';
+      line-height:1.75;
+    }
+    main p {
+      padding:0 2rem;
+    }
+    main img {
+      margin-left:-2rem;
+      width:calc(100% + 4rem);
+    }
+    main ul {
+      font-size:1.2rem;
+      font-family:'Times','Times New Roman';
+      font-family:'Playfair Display';
+      line-height:1.75;
+      padding:0 4rem;
     }
     header {
-      margin:1rem 0;
+      margin:0 0 1rem 0;
       overflow:auto;
     }
     header a {
-      padding:0.5rem 0 0.5rem 0.5rem;
-      display:block;
+      padding:1.5rem 0 0.5rem 0.5rem;
+      display:inline-block;
+      overflow:block;
     }
-    header a{
+    header a:link, header a:visited{
       text-decoration: none;
       color:#222;
     }
     header h1, header h2 {
-      font-size:1.5rem;
+      font-size:1.75rem;
       line-height:1;
       padding:0;
       margin:0;
+      font-weight:200;
     }
     header h2 {
       font-size:1rem;
@@ -69,8 +102,19 @@
       color:#222;
       background:#eee;
     }
+
     img {
       width:100%;
+    }
+    main a img {
+      transition:opacity 0.2s ease;
+      width:calc(100% + 4rem);
+    }
+    main .content-logos img {
+      width:100%;
+    }
+    main a:hover img {
+      opacity: 0.6;
     }
 
     sidebar {
@@ -103,7 +147,7 @@
       margin:0;
       padding:0 0 4rem 0;
       box-sizing:border-box;
-      padding-left:
+      position:relative;
     }
     a + em {
       display:block;
@@ -136,12 +180,14 @@
       width:50%;
       text-align: left;
       vertical-align: middle;
+      box-sizing: border-box;
     }
     .right {
       float:right;
       width:50%;
       text-align: right;
       vertical-align: middle;
+      box-sizing: border-box;
     }
     .logos, .content-logos  {
       text-align: center;
@@ -151,6 +197,11 @@
       width:8%;
       padding:0.5rem;
       box-sizing: border-box;
+      transition:opacity 0.2s ease;
+    }
+
+    .logos a:hover {
+      opacity:0.8;
     }
 
     .content-logos a {
@@ -158,25 +209,45 @@
       width:16%;
       padding:0.5rem;
       box-sizing: border-box;
+      transition:opacity 0.2s ease;
+    }
+    .content-logos a:hover {
+      opacity:0.6;
+    }
+    .logo {
+      width:25%;
+      margin-right:1rem;
+      vertical-align: middle;
+    }
+    .left h1 {
+      float:left;
+      color:rgb(0,65,105);
+    }
+    .back-to-top {
+      margin-top:2rem;
+      text-align: right;
     }
   </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <div class="left">
+  <header id="top">
+      <div class="left">
+          <a href="/">
+            <h1>
+            <img class="logo" src="/images/partners/plumpton.png"/> Teaching with Virtual Reality
+          </h1>
+          </a>
+          </div>
+  <!--  <div class="right">
     <a href="/">
-      <h1>Teaching with Virtual Reality</h1>
+      <h2>www.teachingwithvirtualreality.com</h2>
     </a>
-    </div>
-    <div class="right">
-    <a href="/">
-      <h2>www.teachingwithvirtuareality.com</h2>
-    </a>
-  </div>
+  </div> -->
   </header>
 <sidebar>
 <nav>
+  
 {% for item in site.data.pages.toc %}
 <strong>{{ item.title }}</strong>
 <ul>
@@ -216,6 +287,10 @@
 <h1>{{ page.title }}</h1>
 <h2>{{ page.subtitle }}</h2>
 {{ content }}
+
+<div class="back-to-top">
+<a href="#top">Back to Top</a>
+</div>
 </main>
 
 <footer>
