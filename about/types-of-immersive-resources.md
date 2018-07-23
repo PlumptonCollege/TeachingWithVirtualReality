@@ -1,5 +1,7 @@
 ## Types of Immersive Resources
 
+![Types of Immersive Resources](/images/about/types-of-immersive-resources.png "Types of Immersive Resources")
+
 After researching the current state of virtual reality technology, four categories of immersive resources were identified for evaluation during the creation of learning resources. 
 As discussed above, 360o photography describes technology that can capture static images at a specific location where the viewer can change the angle of observation as if they are physically at that position. It is potentially the most accessible to the average teacher. Free mobile phone apps like Google Cardboard Camera can create basic 360o scenes using the in-built camera. This could be used by teachers or students to create immersive learning resources or to capture evidence of learning. 
 

@@ -1,5 +1,7 @@
 ## Impact on Teaching & Learning
 
+![Impact on Teaching & Learning](/images/about/impact-on-teaching-learning.jpg "Impact on Teaching & Learning")
+
 Before commencing teaching trials, it was important to identify areas where the partners believed immersive technologies could have an impact within the classroom. The project identified four areas for evaluation.
 
 ‘Instruction or Orientation’ describe activities where students experience a learning environment or skill for the first time. Virtual reality could be a way of introducing students to a new learning area before they are physically able to in the real world.
