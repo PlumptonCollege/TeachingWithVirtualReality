@@ -1,15 +1,16 @@
 toc:
 - title: About the Project
   subpages:
-  - title: About the Project
+  - title: Teaching with Virtual Reality
     url: /about/project
+  - title: Project Partnership
+    url: /about/partnership
   - title: State of Virtual Reality
     url: /about/state-of-virtual-reality
   - title: Types of Immersive Resources
     url: /about/types-of-immersive-resources
   - title: Impact on Teaching & Learning
     url: /about/impact-on-teaching-learning
-- title: Case Studies
-  subpages:
-  - title: Animal Care
-    url: /case-studies/animal-care
+categories:
+  - title: Case Studies
+    slug: case_studies

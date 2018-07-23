@@ -1,11 +1,15 @@
 ---
 layout: page
 title: Identifying Equipment in the Garage for Motor-vehicle
-subtitle: East Sussex College Group
+subtitle: Case Study at East Sussex College Group
 permalink: /case-studies/motor-vehicle
+categories: [case_studies]
 ---
 
-[![Identifying Equipment in the Garage for Motor-vehicle](/images/case-studies/motor-vehicle.jpg "Identifying Equipment in the Garage for Motor-vehicle")](/)
+<a data-fancybox data-type="iframe" href="https://drive.google.com/file/d/1NHijiRLWdBWuD6rph5TWo6-CnXIgd9EN/preview">
+![Identifying Equipment in the Garage for Motor-vehicle](/images/case-studies/motor-vehicle.jpg "Identifying Equipment in the Garage for Motor-vehicle")
+</a>
+*Click the image to launch example content*
 
 The motor-vehicle team at ESCG wished to record 360o video of students undertaking various practical tasks in the garage. Students would then watch and reflect on their performance in the following theory lesson in order to encourage deeper analysis and knowledge retention.
 

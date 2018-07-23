@@ -1,11 +1,13 @@
 ---
 layout: page
 title: Exploring Space Equipment for Science
-subtitle: Plumpton College
+subtitle: Case Study at Plumpton College
 permalink: /case-studies/space-equipment
+categories: [case_studies]
 ---
 
 [![Exploring Space Equipment for Science](/images/case-studies/space-equipment.jpg "Exploring Space Equipment for Science")](/)
+*Click the image to view the app in the Oculus Store*
 
 Plumpton College wanted to run a trial that included computer generated environments to compare against 360o photography and video. The entry-level science teacher, planned to teach a series of lessons on how technology is used in space and enquired whether there was any pre-created virtual reality learning resources. The team found the official International Space Station Tour for Oculus Go. The VR app consists of an interactive replica of the ISS interspersed with learning videos and quizzes. In the classroom, Oculus Go headsets were used as a station within a carousel of activities. The learning objective for the activity was to explore the VR world and find examples of specialist equipment. Students then completed a written exercise on another station. 
 

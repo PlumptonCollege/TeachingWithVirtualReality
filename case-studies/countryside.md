@@ -1,11 +1,15 @@
 ---
 layout: page
 title: Identifying Habitats for Countryside 
-subtitle: Plumpton College
+subtitle: Case Study at Plumpton College
 permalink: /case-studies/countryside
+categories: [case_studies]
 ---
 
-[![Identifying Habitats for Countryside](/images/case-studies/countryside.jpg "Identifying Habitats for Countryside")](/)
+<a data-fancybox href="https://vimeo.com/278502015">
+![Identifying Habitats for Countryside](/images/case-studies/countryside.jpg "Identifying Habitats for Countryside")
+</a>
+*Click the image to launch example content*
 
 The countryside division took part in two separate trials for this project.
 

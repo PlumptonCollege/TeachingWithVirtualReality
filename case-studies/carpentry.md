@@ -1,11 +1,15 @@
 ---
 layout: page
 title: Workshop Induction for Carpentry 
-subtitle: East Sussex College Group
+subtitle: Case Study at East Sussex College Group
 permalink: /case-studies/carpentry
+categories: [case_studies]
 ---
 
-[![Workshop Induction for Carpentry](/images/case-studies/carpentry.jpg "Workshop Induction for Carpentry")](/)
+<a data-fancybox data-type="iframe" href="https://elearn.sussexdowns.ac.uk/emb/">
+![Workshop Induction for Carpentry](/images/case-studies/carpentry.jpg "Workshop Induction for Carpentry")
+</a>
+*Click the image to launch example content*
 
 For this case study, the ESCG wanted to create a resource that allowed users to explore the carpentry machine workshop. Collaborating with the lead carpentry lecturer, the innovation team chose a selection of machines that included a mix of those students would use as part of their course of study, and some that were only part of a level 3 course of study. For capture they used a Theta V VR camera to capture the photographic content, and to record 360 demonstrations of the machines in use.
 

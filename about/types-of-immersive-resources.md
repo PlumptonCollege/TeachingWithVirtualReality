@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Types of Immersive Resources
+subtitle: 
 permalink: /about/types-of-immersive-resources
 ---
 

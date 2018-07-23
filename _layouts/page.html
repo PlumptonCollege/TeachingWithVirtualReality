@@ -1,9 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="/css/normalize.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+  <style>
+    body {
+      margin:0;
+      padding:0;
+      font-family:'Source Sans Pro';
+      font-size:16px;
+      line-height:1.5;
+      color:#222;
+    }
+    .wrap {
+      max-width:960px;
+      overflow:auto;
+      margin:1rem auto 0 auto; 
+      padding:0 1rem;
+    }
+    h1,h2,h3 {
+      font-family:'Playfair Display';
+    }
+    header {
+      margin:1rem 0;
+      overflow:auto;
+    }
+    header a {
+      padding:0.5rem 0 0.5rem 0.5rem;
+      display:block;
+    }
+    header a{
+      text-decoration: none;
+      color:#222;
+    }
+    header h1, header h2 {
+      font-size:1.5rem;
+      line-height:1;
+      padding:0;
+      margin:0;
+    }
+    header h2 {
+      font-size:1rem;
+      line-height:2rem;
+    }
+    nav strong:first-child {
+      padding-top:0.5rem;
+    }
+    nav strong {
+      display:block;
+      padding:1rem 2rem 0 0.5rem;
+    }
+    nav a:link,nav a:visited {
+      color:#777;
+      text-decoration: none;
+      // transition:border 0.2s ease, padding 0.2s ease;
+      display:block;
+      padding:0.5rem 2rem 0.5rem 0.5rem;
+      border-right:solid 0.2rem transparent;
+    }
+    nav a:hover {
+      color:#222;
+    }
+    nav a.active {
+      border-right:solid 0.2rem #222;
+      color:#222;
+      background:#eee;
+    }
+    img {
+      width:100%;
+    }
+
+    sidebar {
+      float:left;
+      width:30%;
+      padding-right:4em;
+      overflow: auto;
+      box-sizing:border-box;
+
+    }
+    nav {
+      font-size:0.8rem;
+      border-right:1px solid #ddd;
+    }
+    nav ul {
+      margin:0;
+      padding:0;
+    }
+    nav ul li {
+      list-style: none;
+      margin:0;
+      padding:0;
+      display:block;
+      line-height:1.25;
+    }
+    main {
+      float:right;
+      width:70%;
+      overflow: auto;
+      margin:0;
+      padding:0 0 4rem 0;
+      box-sizing:border-box;
+      padding-left:
+    }
+    a + em {
+      display:block;
+      margin-bottom:2rem;
+      font-size:0.8rem;
+      color:#777;
+    }
+
+    footer {
+      font-size:0.9rem;
+      margin-top:1rem;
+      color:#aaa;
+      clear:both;
+      padding:2rem 0;
+    }
+    footer a:link, footer a:visited {
+      text-decoration:underline;
+      color:#aaa;
+    }
+    footer a:hover {
+      text-decoration: none;
+    }
+    footer small {
+      display:block;
+      text-align: center;
+      padding:0.25rem 0;
+    }
+    .left {
+      float:left;
+      width:50%;
+      text-align: left;
+      vertical-align: middle;
+    }
+    .right {
+      float:right;
+      width:50%;
+      text-align: right;
+      vertical-align: middle;
+    }
+    .logos, .content-logos  {
+      text-align: center;
+    }
+    .logos a {
+      display:inline-block;
+      width:8%;
+      padding:0.5rem;
+      box-sizing: border-box;
+    }
+
+    .content-logos a {
+      display:inline-block;
+      width:16%;
+      padding:0.5rem;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="left">
+    <a href="/">
+      <h1>Teaching with Virtual Reality</h1>
+    </a>
+    </div>
+    <div class="right">
+    <a href="/">
+      <h2>www.teachingwithvirtuareality.com</h2>
+    </a>
+  </div>
+  </header>
+<sidebar>
+<nav>
 {% for item in site.data.pages.toc %}
-<h3>{{ item.title }}</h3>
+<strong>{{ item.title }}</strong>
 <ul>
   {% for entry in item.subpages %}
     {% if page.url == entry.url %}
-      <li class="active"><strong><a href="{{ientrytem.url}}" class="active">{{entry.title}}</a></strong></li>
+      <li class="active"><a href="{{entry.url}}" class="active">{{entry.title}}</a></li>
     {% else %}
       <li><a href="{{entry.url}}">{{entry.title}}</a></li>
     {% endif %}
@@ -11,6 +190,99 @@
 </ul>
 {% endfor %}
 
-<h1>{{ title }}</h1>
-<h2>{{ subtitle }}</h2>
+{% for category in site.data.pages.categories %}
+  <strong>{{category.title}}</strong> 
+  <ul>
+  {% for entry in site.pages %}
+    {% if entry.categories contains category.slug %}
+      {% if page.url == entry.url %}
+        <li class="active"><a href="{{entry.url}}" class="active">{{entry.title}}</a></li>
+      {% else %}
+        <li><a href="{{entry.url}}">{{entry.title}}</a></li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  </ul>
+{% endfor %}
+<strong>Downloads</strong>
+<ul>
+  <li><a href="/downloads/teaching-with-virtual-reality-report.pdf">Full report (July 2018)</a></li>
+  <li><a href="/downloads/teaching-with-virtual-reality-presentation.pdf">Presentation (July 2018)</a></li>
+</ul>
+</nav>
+</sidebar>
+
+<main>
+<h1>{{ page.title }}</h1>
+<h2>{{ page.subtitle }}</h2>
 {{ content }}
+</main>
+
+<footer>
+    <div class="logos">
+        <a href="https://www.plumpton.ac.uk">
+        <img data-animation="fadeInUp" src="/images/partners/plumpton.png" />
+        </a>
+        <a href="https://www.gbmc.ac.uk">
+        <img data-animation="fadeInUp" src="/images/partners/gbmc.png" />
+        </a>
+        <a href="http://www.sussexdowns.ac.uk">
+        <img data-animation="fadeInUp" src="/images/partners/sussexdowns.png" />
+        </a>
+        
+        <a href="http://www.et-foundation.co.uk/supporting/support-practitioners/improvements-in-teacher-learning-and-assessment/">
+        <img data-animation="fadeInUp" src="/images/partners/etf.jpg" />
+        </a>
+        <a href="https://www.creativeeducation.co.uk/">
+        <img data-animation="fadeInUp" src="/images/partners/creativeeducation.png" />
+        </a>
+        <a href="http://www.fesussex.org.uk/">
+        <img data-animation="fadeInUp" src="/images/partners/fesussex.jpg" />
+        </a>
+
+        <a href="https://www.aoc.co.uk/">
+        <img data-animation="fadeInUp" src="/images/partners/aoc.jpg" />
+        </a>
+         <a href="http://www.landex.org.uk/">
+        <img data-animation="fadeInUp" src="/images/partners/landex.jpg" />
+        </a>
+        <a href="https://www.jisc.ac.uk/">
+         <img data-animation="fadeInUp" src="/images/partners/jisc.png" />
+         </a>
+          <a href="https://www.sussex.ac.uk/">
+        <img data-animation="fadeInUp" src="/images/partners/sussex.png" />
+        </a>
+         <a href="https://www.brighton.ac.uk/">
+        <img data-animation="fadeInUp" src="/images/partners/brighton.jpg" />
+        </a>
+        </div>
+
+
+    <small id="reference">Maltby, J. M. (ed), 2018. <em>Teaching with Virtual Reality.</em> [ONLINE] Available at: https://teachingwithvirtualreality.com.</small>
+
+    <small>Supported by the <a href='http://www.et-foundation.co.uk/supporting/support-practitioners/improvements-in-teacher-learning-and-assessment/'>Education &amp; Training Foundation</a> &middot Project lead by <a href='https://www.plumpton.ac.uk'>Plumpton College</a> &middot; <a href='https://jamesmichaelmaltby.com'>Contact the Editor</a> &middot; <a href='https://creativecommons.org/licenses/by/4.0/legalcode'>Creative Commons Attribution License</a></small>
+</footer>
+
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+<script>
+  function formatDate(date) {
+    var monthNames = [
+        "January", "February", "March",
+        "April", "May", "June", "July",
+        "August", "September", "October",
+        "November", "December"
+    ];
+    var day = date.getDate();
+    var monthIndex = date.getMonth();
+    var year = date.getFullYear();
+    return day + ' ' + monthNames[monthIndex] + ' ' + year;
+  }
+  var now = new Date();
+  var date = formatDate(now);
+  var ref = document.getElementById('reference');
+  ref.innerHTML += ' [Accessed ' + date + '].';
+</script>
+</body>
+</html>

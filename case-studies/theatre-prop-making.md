@@ -1,11 +1,15 @@
 ---
 layout: page
-title: Showcasing Students Work for Prop-making
-subtitle: Greater Brighton Metropolitan College
+title: Showcasing Students' Work for Prop-making
+subtitle: Case Study at Greater Brighton Metropolitan College
 permalink: /case-studies/theatre-prop-making
+categories: [case_studies]
 ---
 
-[![Showcasing Students Work for Prop-making](/images/case-studies/theatre-prop-making.jpg "Showcasing Students Work for Prop-making")](/)
+<a data-fancybox data-type="iframe" href="https://www.thinglink.com/mediacard/1065636562278023171">
+![Showcasing Students Work for Prop-making](/images/case-studies/theatre-prop-making.jpg "Showcasing Students Work for Prop-making")
+</a>
+*Click the image to launch example content*
 
 For their final trial, GBMC wanted to see how virtual reality could be used to showcase students work for their portfolio of evidence. Students on the Prop Making course created a wide variety of products for their end of year show. The teaching team could see the potential of using 360o photography to capture as much detail as possible from the work and to present all of the items in an engaging way to remote viewers.
 

@@ -1,11 +1,16 @@
 ---
 layout: page
 title: Virtual Tours for Travel & Tourism
-subtitle: East Sussex College Group
+subtitle: Case Study at East Sussex College Group
 permalink: /case-studies/travel-tourism
+categories: [case_studies]
 ---
 
-[![Virtual Tours for Travel & Tourism](/images/case-studies/travel-tourism.jpg "Virtual Tours for Travel & Tourism")](/)
+
+<a data-fancybox  href="https://www.youtube.com/watch?v=-Yv7hJCpMPU">
+![Virtual Tours for Travel & Tourism](/images/case-studies/travel-tourism.jpg "Virtual Tours for Travel & Tourism")]
+</a>
+*Click the image to launch example content*
 
 ESCG approached their Travel and Tourism department to use Google Expeditions as a tool to take Travel and Tourism students on a virtual guided tour of somewhere they might have been learning about as part of their course. 
 

@@ -1,11 +1,15 @@
 ---
 layout: page
 title: Attaching a Trailer for Agriculture
-subtitle: Plumpton College
+subtitle: Case Study at Plumpton College
 permalink: /case-studies/tractor-driving
+categories: [case_studies]
 ---
 
-[![Attaching a Trailer for Agriculture](/images/case-studies/tractor-driving.jpg "Attaching a Trailer for Agriculture")](/)
+<a data-fancybox href="https://vimeo.com/281305866">
+![Attaching a Trailer for Agriculture](/images/case-studies/tractor-driving.jpg "Attaching a Trailer for Agriculture")
+</a>
+*Click the image to launch example content*
 
 When approached with the idea of creating virtual reality resources for tractor driving skills, the instructors identified reversing and attaching a trailer as the hardest skill that novice students found to learn. It was important for students to remember the correct order of operations which required understanding of both the controls and attachment mechanism. This learning tasks seemed a perfect fit for a 360o video capture. The resource could be used both as introductory activity and as a regular exercise when students were practising their skills. 
 
