@@ -1,6 +1,6 @@
 ## Impact on Teaching & Learning
 
-![Impact on Teaching & Learning](/images/about/impact-on-teaching-learning.jpg "Impact on Teaching & Learning")
+![Impact on Teaching & Learning](/images/about/impact-on-teaching-learning.png "Impact on Teaching & Learning")
 
 Before commencing teaching trials, it was important to identify areas where the partners believed immersive technologies could have an impact within the classroom. The project identified four areas for evaluation.
 

@@ -1,0 +1,15 @@
+toc:
+- title: About the Project
+    subfolderitems:
+    - title: About the Project
+    url: /about/project
+    - title: State of Virtual Reality
+    url: /about/state-of-virtual-reality
+    - title: Types of Immersive Resources
+    url: /about/types-of-immersive-resources
+    - title: Impact on Teaching & Learning
+    url: /about/impact-on-teaching-learning
+- title: Case Studies
+    subfolderitems:
+    - title: Animal Care
+    url: /case-studies/animal-care
