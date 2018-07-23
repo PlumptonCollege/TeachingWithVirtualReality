@@ -1,3 +1,9 @@
+---
+layout: page
+title: State of Virtual Reality
+permalink: /about/state-of-virtual-reality
+---
+
 ## State of Virtual Reality
 
 ![State of Virtual Reality](/images/about/state-of-virtual-reality.png "State of Virtual Reality")

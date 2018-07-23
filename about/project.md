@@ -1,9 +1,10 @@
 ---
 layout: page
-title: About the Partnership
+title: About the Project
+permalink: /about/project
 ---
 
-## About the Partnership
+## About the Project
 
 The lead organisation for this project was Plumpton College, a specialist land-based further and higher education provider based in the South Downs near Lewes. The college has over 1500 further education students. The project was led by James Michael Maltby, Learning Technology Manager within Teaching & Learning. Case studies were led by Michael Danks.
 

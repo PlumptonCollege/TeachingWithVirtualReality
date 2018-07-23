@@ -1,5 +1,9 @@
-## Identifying Equipment in the Garage for Motor-vehicle
-### East Sussex College Group
+---
+layout: page
+title: Identifying Equipment in the Garage for Motor-vehicle
+subtitle: East Sussex College Group
+permalink: /case-studies/motor-vehicle
+---
 
 [![Identifying Equipment in the Garage for Motor-vehicle](/images/case-studies/motor-vehicle.jpg "Identifying Equipment in the Garage for Motor-vehicle")](/)
 

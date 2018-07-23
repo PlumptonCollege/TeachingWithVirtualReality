@@ -1,8 +1,16 @@
 {% for item in site.data.pages.toc %}
-    <h3>{{ item.title }}</h3>
-      <ul>
-        {% for entry in item.subfolderitems %}
-          <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
-        {% endfor %}
-      </ul>
+<h3>{{ item.title }}</h3>
+<ul>
+  {% for entry in item.subpages %}
+    {% if page.url == entry.url %}
+      <li class="active"><strong><a href="{{ientrytem.url}}" class="active">{{entry.title}}</a></strong></li>
+    {% else %}
+      <li><a href="{{entry.url}}">{{entry.title}}</a></li>
+    {% endif %}
   {% endfor %}
+</ul>
+{% endfor %}
+
+<h1>{{ title }}</h1>
+<h2>{{ subtitle }}</h2>
+{{ content }}

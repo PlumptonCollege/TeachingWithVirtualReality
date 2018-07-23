@@ -1,4 +1,8 @@
-## Types of Immersive Resources
+---
+layout: page
+title: Types of Immersive Resources
+permalink: /about/types-of-immersive-resources
+---
 
 ![Types of Immersive Resources](/images/about/types-of-immersive-resources.png "Types of Immersive Resources")
 

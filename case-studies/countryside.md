@@ -1,5 +1,9 @@
-## Identifying Habitats for Countryside
-### Plumpton College
+---
+layout: page
+title: Identifying Habitats for Countryside 
+subtitle: Plumpton College
+permalink: /case-studies/countryside
+---
 
 [![Identifying Habitats for Countryside](/images/case-studies/countryside.jpg "Identifying Habitats for Countryside")](/)
 

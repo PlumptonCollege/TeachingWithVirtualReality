@@ -1,5 +1,9 @@
-## Workshop Induction for Carpentry 
-### East Sussex College Group
+---
+layout: page
+title: Workshop Induction for Carpentry 
+subtitle: East Sussex College Group
+permalink: /case-studies/carpentry
+---
 
 [![Workshop Induction for Carpentry](/images/case-studies/carpentry.jpg "Workshop Induction for Carpentry")](/)
 

@@ -1,4 +1,8 @@
-## Impact on Teaching & Learning
+---
+layout: page
+title: Impact on Teaching & Learning
+permalink: /about/impact-on-teaching-learning
+---
 
 ![Impact on Teaching & Learning](/images/about/impact-on-teaching-learning.png "Impact on Teaching & Learning")
 

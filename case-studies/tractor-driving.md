@@ -1,5 +1,9 @@
-## Attaching a Trailer for Agriculture
-### Plumpton College
+---
+layout: page
+title: Attaching a Trailer for Agriculture
+subtitle: Plumpton College
+permalink: /case-studies/tractor-driving
+---
 
 [![Attaching a Trailer for Agriculture](/images/case-studies/tractor-driving.jpg "Attaching a Trailer for Agriculture")](/)
 

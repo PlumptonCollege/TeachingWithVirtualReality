@@ -1,5 +1,9 @@
-## Identifying Airplane Parts for Aeronautical Engineering
-### Greater Brighton Metropolitan College
+---
+layout: page
+title: Identifying Airplane Parts for Aeronautical Engineering
+subtitle: Greater Brighton Metropolitan College
+permalink: /case-studies/aeronautical-engineering
+---
 
 [![Identifying Airplane Parts for Aeronautical Engineering](/images/case-studies/aeronautical-engineering.jpg "Identifying Airplane Parts for Aeronautical Engineering")](/)
 

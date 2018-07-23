@@ -1,5 +1,9 @@
-## Exploring Space Equipment for Science
-### Plumpton College
+---
+layout: page
+title: Exploring Space Equipment for Science
+subtitle: Plumpton College
+permalink: /case-studies/space-equipment
+---
 
 [![Exploring Space Equipment for Science](/images/case-studies/space-equipment.jpg "Exploring Space Equipment for Science")](/)
 

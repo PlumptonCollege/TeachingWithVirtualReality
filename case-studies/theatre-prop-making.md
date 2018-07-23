@@ -1,5 +1,9 @@
-## Showcasing Students Work for Prop-making
-### Greater Brighton Metropolitan College
+---
+layout: page
+title: Showcasing Students Work for Prop-making
+subtitle: Greater Brighton Metropolitan College
+permalink: /case-studies/theatre-prop-making
+---
 
 [![Showcasing Students Work for Prop-making](/images/case-studies/theatre-prop-making.jpg "Showcasing Students Work for Prop-making")](/)
 

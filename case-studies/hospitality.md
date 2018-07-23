@@ -1,7 +1,11 @@
-## Kitchen Induction for Hospitability
-### Greater Brighton Metropolitan College
+---
+layout: page
+title: Kitchen Induction for Hospitability
+subtitle: Greater Brighton Metropolitan College
+permalink: /case-studies/hospitality
+---
 
-[![Kitchen Induction for Hospitability](/images/case-studies/hospitability.jpg "Kitchen Induction for Hospitability")](/)
+[![Kitchen Induction for Hospitality](/images/case-studies/hospitality.jpg "Kitchen Induction for Hospitability")](/)
 
 The hospitability division at GBMC saw a potential use for a virtual reality resource during their kitchen induction lessons. For each equipment station within the kitchen students, are required to complete a health and safety task and evidence that they have understand proper procedure. In previous years it has been difficult for the teaching team to engage students with these activities, but they are an essential part of the course. The learning technology team at GBMC saw the potential to augment this activity with videos and interactive elements in a virtual tour. The virtual activity could be completed either before, during or after the session.
 

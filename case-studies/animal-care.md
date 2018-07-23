@@ -1,5 +1,9 @@
-## Assessing Welfare for Animal Care
-### Plumpton College
+---
+layout: page
+title: Assessing Welfare for Animal Care
+subtitle: Plumpton College
+permalink: /case-studies/animal-care
+---
 
 [![Assessing Welfare for Animal Care](/images/case-studies/animal-care.jpg "Assessing Welfare for Animal Care")](/)
 

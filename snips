@@ -1,6 +1,6 @@
 toc:
 - title: About the Project
-  subpages:
+  sub:
   - title: About the Project
     url: /about/project
   - title: State of Virtual Reality
@@ -10,6 +10,6 @@ toc:
   - title: Impact on Teaching & Learning
     url: /about/impact-on-teaching-learning
 - title: Case Studies
-  subpages:
+  sub:
   - title: Animal Care
     url: /case-studies/animal-care

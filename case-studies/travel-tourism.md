@@ -1,5 +1,9 @@
-## Virtual Tours for Travel & Tourism
-### East Sussex College Group
+---
+layout: page
+title: Virtual Tours for Travel & Tourism
+subtitle: East Sussex College Group
+permalink: /case-studies/travel-tourism
+---
 
 [![Virtual Tours for Travel & Tourism](/images/case-studies/travel-tourism.jpg "Virtual Tours for Travel & Tourism")](/)
 
