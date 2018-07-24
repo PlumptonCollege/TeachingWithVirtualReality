@@ -6,7 +6,7 @@ permalink: /case-studies/animal-care
 categories: [case_studies]
 ---
 
-<a data-fancybox href="https://vimeo.com/281307298">
+<a data-fancybox href="https://vimeo.com/281307298/5a6ac4bc72">
 ![Assessing Welfare for Animal Care](/images/case-studies/animal-care.jpg "Assessing Welfare for Animal Care")
 </a>
 *Click the image to launch example content*

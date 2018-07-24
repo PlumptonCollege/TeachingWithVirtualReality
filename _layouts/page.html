@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="/css/normalize.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
-
+  <title>{{ page.title }} | Teaching with Virtual Reality</title>
   <style>
     body {
       margin:0;
@@ -26,10 +26,12 @@
       text-decoration: none;
     }
     .wrap {
-      max-width:960px;
+      max-width:1024px;
       overflow:auto;
       margin:0 auto 0 auto; 
       padding:0 1rem;
+      text-align: left;
+      box-sizing: border-box;
     }
     h1,h2,h3 {
       font-family:'Playfair Display';
@@ -42,43 +44,22 @@
       line-height:1.75;
     }
     main p {
-      padding:0 2rem;
+      padding:0 4rem;
     }
     main img {
-      margin-left:-2rem;
-      width:calc(100% + 4rem);
+      margin-left:-4rem;
+      width:calc(100% + 8rem);
     }
     main ul {
       font-size:1.2rem;
       font-family:'Times','Times New Roman';
       font-family:'Playfair Display';
       line-height:1.75;
-      padding:0 4rem;
+      padding:0 4rem 0 8rem;
     }
-    header {
-      margin:0 0 1rem 0;
-      overflow:auto;
-    }
-    header a {
-      padding:1.5rem 0 0.5rem 0.5rem;
-      display:inline-block;
-      overflow:block;
-    }
-    header a:link, header a:visited{
-      text-decoration: none;
-      color:#222;
-    }
-    header h1, header h2 {
-      font-size:1.75rem;
-      line-height:1;
-      padding:0;
-      margin:0;
-      font-weight:200;
-    }
-    header h2 {
-      font-size:1rem;
-      line-height:2rem;
-    }
+
+
+ 
     nav strong:first-child {
       padding-top:0.5rem;
     }
@@ -117,13 +98,14 @@
       opacity: 0.6;
     }
 
-    header,sidebar {
+    sidebar {
       float:left;
       width:30%;
       padding-right:4em;
       overflow: auto;
       box-sizing:border-box;
       clear:left;
+      margin-top:1rem;
     }
     nav {
       font-size:0.8rem;
@@ -149,9 +131,9 @@
       box-sizing:border-box;
       position:relative;
     }
-    main h1,main h2 {
+    /*main h1,main h2 {
       padding: 0 2rem;
-    }
+    }*/
     a + em {
       display:block;
       margin-bottom:2rem;
@@ -180,14 +162,14 @@
     }
     .left {
       float:left;
-      width:50%;
+      width:40%;
       text-align: left;
       vertical-align: middle;
       box-sizing: border-box;
     }
     .right {
       float:right;
-      width:50%;
+      width:60%;
       text-align: right;
       vertical-align: middle;
       box-sizing: border-box;
@@ -201,6 +183,7 @@
       padding:0.5rem;
       box-sizing: border-box;
       transition:opacity 0.2s ease;
+      vertical-align: middle;
     }
 
     .logos a:hover {
@@ -220,18 +203,8 @@
     .logo {
       width:100%;
     }
-    header {
-      padding:0;
-      margin:0;
-      text-align: center;
-      display:inline-block;
-    }
-    header h1 {
-      text-align: center;
-      line-height:1;
-      padding:0;
-      margin:0;
-    }
+
+
     nav h1 {
       text-align: center;
       color:rgb(0,65,105);
@@ -260,19 +233,63 @@
       color:rgb(0,65,105);
       text-decoration: none;
     }
+
+    header {
+      padding:0;
+      margin:0;
+      text-align: center;
+      display:block;
+      box-shadow:0 0 0.5rem rgba(0,0,0,0.2);
+    }
+
+
+    header img {
+      width:20%;
+      padding:0 0 0 1rem;
+      vertical-align: middle;
+      display:inline-block;
+      box-sizing: border-box;
+    }
+
+    header h1 {
+      padding:0;
+      margin:0;
+      font-size:1.75rem;
+      line-height:1;
+      font-weight:200;
+      padding:2.25rem 0 0 0;
+      font-family:'Playfair Display';
+    }
+    header h1 a:link,header h1 a:visited {
+      text-decoration: none;
+      color:#222;
+    }
   </style>
 </head>
 <body>
+
+<header>
+  <div class="wrap">
+      <div class="left">
+
+  <h1>
+        <a href="/">
+          <span>Teaching with Virtual Reality</span>
+        </a>
+  </h1>
+</div>
+  <div class="right">
+    <img src="/images/partners/plumpton.png"/> 
+    <img src="/images/partners/etf.jpg"/>
+    <img src="/images/partners/gbmc.png" />
+    <img src="/images/partners/sussexdowns.png" />
+  </div> 
+  </div>
+</header>
+
 <div class="wrap">
 
 <sidebar id="top">
-
-    <h1>
-        <a href="/">
-          <img src="/images/partners/plumpton.png"/> 
-          Teaching with Virtual Reality
-        </a>
-      </h1>
 
 <nav>
 

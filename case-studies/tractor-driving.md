@@ -6,7 +6,7 @@ permalink: /case-studies/tractor-driving
 categories: [case_studies]
 ---
 
-<a data-fancybox href="https://vimeo.com/281305866">
+<a data-fancybox href="https://vimeo.com/281305866/3c21799533">
 ![Attaching a Trailer for Agriculture](/images/case-studies/tractor-driving.jpg "Attaching a Trailer for Agriculture")
 </a>
 *Click the image to launch example content*
