@@ -6,7 +6,7 @@ permalink: /case-studies/countryside
 categories: [case_studies]
 ---
 
-<a data-fancybox href="https://vimeo.com/278502015/619c00bd9d">
+<a data-fancybox href="https://vimeo.com/278502015">
 ![Identifying Habitats for Countryside](/images/case-studies/countryside.jpg "Identifying Habitats for Countryside")
 </a>
 *Click the image to launch example content*
