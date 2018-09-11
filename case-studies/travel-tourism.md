@@ -8,7 +8,7 @@ categories: [case_studies]
 
 
 <a data-fancybox  href="https://www.youtube.com/watch?v=-Yv7hJCpMPU">
-![Virtual Tours for Travel & Tourism](/images/case-studies/travel-tourism.jpg "Virtual Tours for Travel & Tourism")]
+![Virtual Tours for Travel & Tourism](/images/case-studies/travel-tourism.jpg "Virtual Tours for Travel & Tourism")
 </a>
 *Click the image to launch example content*
 
